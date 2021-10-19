@@ -67,7 +67,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>Main</mainClass>
+                            <mainClass>LexicoSolo</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

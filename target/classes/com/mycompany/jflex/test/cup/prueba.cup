@@ -1,0 +1,22 @@
+/* package com.mycompany.jflex.test;
+
+terminal NUM, LETRA;
+terminal COMA;
+terminal CLASE;
+
+non terminal S;
+
+S ::= NUM COMA S
+      {:
+        System.out.println("SINTACTICO: Encontre NUM COMA S");
+       :}
+    | NUM
+      {:
+        System.out.println("SINTACTICO: Encontre NUM");
+      :}
+    | LETRA
+      {:
+        System.out.println("SINTACTICO: Encontre LETRA");
+      :}
+    ;
+*/
