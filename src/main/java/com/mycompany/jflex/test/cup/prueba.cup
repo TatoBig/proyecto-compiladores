@@ -1,22 +1,270 @@
-/* package com.mycompany.jflex.test;
+package com.mycompany.jflex.test;
 
-terminal NUM, LETRA;
-terminal COMA;
 terminal CLASE;
+terminal EXTIENDE;
+terminal PROPIEDADES;
+terminal METODOS;
+terminal PUBLICAS;
+terminal PUBLICOS;
+terminal PROTEGIDOS;
+terminal PROTEGIDAS;
+terminal PRIVADAS;
+terminal PRIVADOS;
+terminal SI;
+terminal DEVOLVER;
+terminal CONSTRUCTOR;
+terminal DESTRUCTOR;
+terminal HACER;
+terminal MIENTRAS;
+terminal INCREMENTAR;
+terminal DECREMENTAR;
+terminal DESDE;
+terminal INSTANCIAR;
+terminal INCLUIR;
+terminal SINO;
+terminal ENTONCES;
+terminal PRINCIPAL;
+terminal ESTATICO;
+terminal DOSPUNTOS;
+terminal PUNTO;
+terminal PUNTOYCOMA;
+terminal COMA;
+terminal IGUAL;
+terminal INICIOCORCHETE;
+terminal FINALCORCHETE;
+terminal INICIOLLAVE;
+terminal FINALLLAVE;
+terminal INICIOPARENTESIS;
+terminal FINALPARENTESIS;
+terminal AND;
+terminal OR;
+terminal MAYOR;
+terminal MENOR;
+terminal MENOROIGUAL;
+terminal MAYOROIGUAL;
+terminal DISTINTO;
+terminal VERDADERO;
+terminal FALSO;
+terminal IGUALQUE;
+terminal CADENA;
+terminal BOLEANO;
+terminal REAL;
+terminal ENTERO;
+terminal NULO;
+terminal LEER;
+terminal ESCRIBIR;
+terminal ELIMINAR;
 
-non terminal S;
+terminal CADENA_ENTERO;
+terminal CADENA_REAL;
+terminal CADENA_BOLEANO;
+terminal SENO;
+terminal COSENO;
+terminal TANGENTE;
+terminal LOGARITMO;
+terminal RAIZ;
+terminal SUMA;
+terminal RESTA;
+terminal DIVISION;
+terminal MULTIPLICACION;
+terminal MODULO;
+terminal INCREMENTO;
+terminal DECREMENTO;
+terminal ID;
+terminal IDCLASE;
+terminal NUMEROS;
+terminal FINLINEA;
 
-S ::= NUM COMA S
-      {:
-        System.out.println("SINTACTICO: Encontre NUM COMA S");
-       :}
-    | NUM
-      {:
-        System.out.println("SINTACTICO: Encontre NUM");
-      :}
-    | LETRA
-      {:
-        System.out.println("SINTACTICO: Encontre LETRA");
-      :}
-    ;
+terminal STRING;
+
+non terminal S, Asignar, LineasCodigo, Identificadores, Parametros, TipoDato, NumReal;
+non terminal Operadores, Operacion, OpcionesEscribir, OpcionesPrivados, OpcionesPublicos, OpcionOperacion;
+non terminal FuncionesSueltas, FuncionesEspeciales, FuncionesMatematicas, FuncionMatematica, FuncionLeer, FuncionEscribir;
+non terminal Declaraciones, BibliotecaExterna;
+non terminal Clases, Constructor, Destructor, AsignarConstructor, MetodoDestructor, MetodosProtegidos, MetodosPrivados, MetodosPublicos, Metodos;
+non terminal PropPrivadas, PropProtegidas, PropPublicas;
+non terminal Instancia, MetodoInstancia, ErrorInstancia, OpcionesProtegidos, LineaCodigo;
+S ::= LineasCodigo;
+
+// S ::= NUMEROS COMA S
+//       {:
+//         System.out.println("SIN: Encontre NUMEROS COMA S");
+//       :}
+//     {:
+// | NUMEROS
+//       {:
+//         System.out.println("SIN: Encontre NUMEROS");
+//       :}
+//     {:
+// | CLASE
+//       {:
+//         System.out.println("SIN: Encontre CLASE");
+//       :};
+NumReal ::= NUMEROS PUNTO NUMEROS;
+
+TipoDato ::= ENTERO|
+             CADENA|
+             BOLEANO|
+             NULO|
+             REAL;
+
+Operadores ::= SUMA|
+               RESTA|
+               MULTIPLICACION|
+               DIVISION|
+               MODULO; 
+
+Operacion ::= ID Operadores Operacion|
+              ID|
+              NUMEROS Operadores Operacion|
+              NUMEROS;
+
+Identificadores ::= ID|
+                    ID COMA Identificadores;
+
+Asignar ::= ENTERO Identificadores IGUAL NUMEROS PUNTOYCOMA|
+            CADENA Identificadores IGUAL STRING PUNTOYCOMA| 
+            BOLEANO Identificadores IGUAL FALSO PUNTOYCOMA|
+            BOLEANO Identificadores IGUAL VERDADERO PUNTOYCOMA|
+            NULO Identificadores PUNTOYCOMA|
+            REAL Identificadores NumReal|
+            ENTERO Identificadores IGUAL NUMEROS PUNTOYCOMA FINLINEA|
+            CADENA Identificadores IGUAL STRING PUNTOYCOMA FINLINEA|
+            BOLEANO Identificadores IGUAL FALSO PUNTOYCOMA FINLINEA|
+            BOLEANO Identificadores IGUAL VERDADERO PUNTOYCOMA FINLINEA|
+            NULO Identificadores PUNTOYCOMA FINLINEA|
+            REAL Identificadores NumReal FINLINEA;
+
+Parametros ::= TipoDato ID|
+               TipoDato ID COMA Parametros;
+            
+FuncionesSueltas  ::= ENTERO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
+                      ENTERO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA| 
+                      REAL ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
+                      REAL ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
+                      BOLEANO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
+                      BOLEANO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
+                      NULO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
+                      NULO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
+                      CADENA ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
+                      CADENA ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA;
+
+FuncionesEspeciales ::= REAL CADENA_REAL INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA|
+                        ENTERO CADENA_ENTERO INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA|
+                        BOLEANO CADENA_BOLEANO INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA;                   
+                
+OpcionesEscribir ::= ID|
+                     NUMEROS|
+                     STRING;
+    
+FuncionEscribir ::= OpcionesEscribir PUNTOYCOMA|
+                    OpcionesEscribir PUNTOYCOMA FINLINEA;
+            
+FuncionLeer ::= LEER ID PUNTOYCOMA;
+
+FuncionesMatematicas ::= REAL SENO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA|
+                         REAL COSENO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA|
+                         REAL TANGENTE INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA|
+                         REAL LOGARITMO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA|
+                         REAL RAIZ INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA;
+
+/* CLASES */
+Declaraciones ::= TipoDato Identificadores FINLINEA Declaraciones                           {: System.out.println("sim: TipoDato Identificadores FINLINEA Declaraciones"); :}|
+                  TipoDato Identificadores FINLINEA                                         {: System.out.println("sim: TipoDato Identificadores FINLINEA"); :};        
+
+PropPublicas ::= PROPIEDADES PUBLICAS DOSPUNTOS FINLINEA Declaraciones PropPrivadas         {: System.out.println("sim: PROPIEDADES PUBLICAS DOSPUNTOS FINLINEA Declaraciones PropPrivadas"); :}|
+                 PropPrivadas                                                               {: System.out.println("sim: PropPrivadas"); :};
+
+PropPrivadas ::= PROPIEDADES PRIVADAS DOSPUNTOS FINLINEA Declaraciones PropProtegidas       {: System.out.println("sim: PROPIEDADES PRIVADAS DOSPUNTOS FINLINEA Declaraciones PropProtegidas"); :}|
+                 PropProtegidas                                                             {: System.out.println("sim: PropProtegidas"); :};
+
+PropProtegidas ::= PROPIEDADES PROTEGIDAS DOSPUNTOS FINLINEA Declaraciones                  {: System.out.println("sim: PROPIEDADES PROTEGIDAS DOSPUNTOS FINLINEA Declaraciones FINLINEA"); :}|
+                   FINLINEA                                                                 {: System.out.println("sim: FINLINEA"); :};
+
+MetodosPublicos ::= METODOS PUBLICOS DOSPUNTOS FINLINEA OpcionesPublicos MetodosPrivados    {: System.out.println("sim: METODOS PUBLICOS DOSPUNTOS FINLINEA OpcionesPublicos MetodosPrivados"); :}|
+                    MetodosPrivados                                                         {: System.out.println("sim: MetodosPrivados"); :};
+
+MetodosPrivados ::= METODOS PRIVADOS DOSPUNTOS FINLINEA OpcionesPrivados MetodosProtegidos  {: System.out.println("sim: METODOS PRIVADOS DOSPUNTOS FINLINEA OpcionesPrivados MetodosProtegidos"); :}|
+                    MetodosProtegidos                                                       {: System.out.println("sim: MetodosProtegidos"); :};
+
+MetodosProtegidos ::= METODOS PROTEGIDOS DOSPUNTOS FINLINEA OpcionesProtegidos              {: System.out.println("sim: METODOS PROTEGIDOS DOSPUNTOS FINLINEA OpcionesProtegidos FINLINEA "); :}|
+                      FINLINEA                                                              {: System.out.println("sim: FINLINEA"); :};
+              
+OpcionesPublicos ::= FuncionesSueltas OpcionesPublicos                                      {: System.out.println("sim: FuncionesSueltas OpcionesPublicos"); :}|
+                     FuncionesSueltas                                                       {: System.out.println("sim: FuncionesSueltas"); :}|
+                     Constructor OpcionesPublicos                                           {: System.out.println("sim: Constructor OpcionesPublicos"); :}|
+                     Constructor                                                            {: System.out.println("sim: Constructor"); :}|
+                     Destructor                                                             {: System.out.println("sim: Destructor");  :};
+
+OpcionesPrivados ::= FuncionesSueltas OpcionesPrivados                                      {: System.out.println("sim: FuncionesSueltas OpcionesPrivados"); :}|
+                     FuncionesSueltas                                                       {: System.out.println("sim: FuncionesSueltas"); :}|
+                     Constructor OpcionesPrivados                                           {: System.out.println("sim: Constructor OpcionesPublicos"); :}|
+                     Constructor                                                            {: System.out.println("sim: Constructor"); :};
+
+OpcionesProtegidos ::= FuncionesSueltas OpcionesProtegidos                                  {: System.out.println("sim:  FuncionesSueltas OpcionesProtegidos");  :}|
+                       FuncionesSueltas                                                     {: System.out.println("sim: FuncionesSueltas"); :};
+                     
+Clases ::= CLASE IDCLASE FINLINEA PropPublicas MetodosPublicos                              {: System.out.println("sim: CLASE IDCLASE FINLINEA PropPublicas MetodosPublicos"); :}| 
+           CLASE IDCLASE EXTIENDE IDCLASE FINLINEA PropPublicas MetodosPublicos             {: System.out.println("sim: CLASE IDCLASE EXTIENDE IDCLASE FINLINEA PropPublicas MetodosPublicos"); :};
+
+/* CONSTRUCTOR & DESTRUCTOR */
+Constructor ::= CONSTRUCTOR INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA AsignarConstructor{: System.out.println("sim: CONSTRUCTOR INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA AsignarConstructor"); :}|
+                CONSTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA                       {: System.out.println("sim: CONSTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA"); :};
+                
+Destructor ::= DESTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoDestructor        {: System.out.println("sim: DESTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoDestructor"); :};
+
+MetodoDestructor::= ELIMINAR ID FINLINEA MetodoDestructor                                   {: System.out.println("sim: ELIMINAR ID FINLINEA MetodoDestructor"); :}|
+                    ELIMINAR ID FINLINEA                                                    {: System.out.println("sim: ELIMINAR ID FINLINEA"); :};
+
+AsignarConstructor ::= ID IGUAL ID FINLINEA AsignarConstructor                              {: System.out.println("sim: ID IGUAL ID FINLINEA AsignarConstructor"); :}|
+                       ID IGUAL ID FINLINEA                                                 {: System.out.println("sim: ID IGUAL ID FINLINEA"); :};
+
+/* INSTANCIACION */
+Instancia ::= IDCLASE ID IGUAL INSTANCIAR IDCLASE INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoInstancia;
+
+MetodoInstancia ::= ESCRIBIR ID PUNTO ID FINLINEA|
+                    ELIMINAR IDCLASE FINLINEA;
+                    
+ErrorInstancia ::= ELIMINAR IDCLASE FINLINEA ESCRIBIR ID PUNTO ID FINLINEA;
+
+/* CONDICIONAL */
+/*
+FuncionSi ::= SI Condicionante ENTONCES FINLINEA Respuesta;
+
+FuncionSino ::= SINO Condicionante ENTONCES FINLINEA Respuesta FincionSino|
+                SINO FINLINEA Respuesta;
+
+FuncionCompuesta ::= FuncionSi FuncionSino|
+                     FincionSi;
+                     
+Respuesta::= DEVOLVER OpcionOperacion|
+             ESCRIBIR STRING;
+  
+Condicionante ::= ID Condicion NUMEROS|
+                  NUMEROS Condicion ID|
+                  ID Ccondicion ID|
+                  NUMEROS Condicion NUMEROS;
+
+Condicion ::= MAYOR|
+              MENOR|
+              MENOROIGUAL|
+              MAYOROIGUAL|
+              DISTINTO|
+              IGUALQUE;
 */
+
+LineasCodigo ::= LineaCodigo LineasCodigo|
+                 LineaCodigo;
+
+LineaCodigo ::= Asignar|
+                FuncionesSueltas|
+                Clases|
+                FuncionesMatematicas|
+                FuncionesEspeciales|
+                FuncionEscribir|
+                FuncionLeer|
+                Instancia|
+                BibliotecaExterna;
+                
+/* BIBLIOTECAS */
+BibliotecaExterna ::= INCLUIR STRING FINLINEA{: System.out.println("sim: INCLUIR STRING FINLINEA"); :};
