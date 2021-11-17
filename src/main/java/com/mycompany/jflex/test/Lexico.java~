@@ -1259,7 +1259,7 @@ class Lexico implements java_cup.runtime.Scanner {
             { String lex = "LEX: Cadena de texto (string) " + yytext() + " - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
             System.out.println(lex);
             writeLex(lex);
-            return new Symbol(sym.STRING)
+            return new Symbol(sym.STRING);
             }
             // fall through
           case 105: break;

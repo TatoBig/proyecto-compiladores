@@ -1,284 +1,122 @@
-Comentario - Linea 1 | Columna: 1
-Fin de linea encontrado - Linea 2 | Columna: 1
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 3 | Columna: 1
-Palabra encontrada: 'multiplicar' coincide con lexema: VARIABLE - Linea 3 | Columna: 8
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 3 | Columna: 20
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 3 | Columna: 21
-Palabra encontrada: 'a' coincide con lexema: VARIABLE - Linea 3 | Columna: 28
-Palabra encontrada: ',' coincide con lexema: COMA - Linea 3 | Columna: 29
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 3 | Columna: 31
-Palabra encontrada: 'b' coincide con lexema: VARIABLE - Linea 3 | Columna: 38
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 3 | Columna: 39
-Fin de linea encontrado - Linea 3 | Columna: 40
-Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 4 | Columna: 3
-Palabra encontrada: 'a' coincide con lexema: VARIABLE - Linea 4 | Columna: 12
-Palabra encontrada: '*' coincide con lexema: MULTIPLICACION - Linea 4 | Columna: 14
-Palabra encontrada: 'b' coincide con lexema: VARIABLE - Linea 4 | Columna: 16
-Fin de linea encontrado - Linea 4 | Columna: 17
-Fin de linea encontrado - Linea 5 | Columna: 1
-Palabra encontrada: 'clase' coincide con lexema: CLASE - Linea 6 | Columna: 1
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 6 | Columna: 7
-Fin de linea encontrado - Linea 6 | Columna: 17
-Palabra encontrada: 'propiedades' coincide con lexema: PROPIEDADES - Linea 7 | Columna: 3
-Palabra encontrada: 'publicas' coincide con lexema: PUBLICAS - Linea 7 | Columna: 15
-Palabra encontrada: ':' coincide con lexema: DOSPUNTOS - Linea 7 | Columna: 23
-Fin de linea encontrado - Linea 7 | Columna: 24
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 8 | Columna: 3
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 8 | Columna: 10
-Fin de linea encontrado - Linea 8 | Columna: 15
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 9 | Columna: 3
-Palabra encontrada: 'largo' coincide con lexema: VARIABLE - Linea 9 | Columna: 10
-Fin de linea encontrado - Linea 9 | Columna: 17
-Palabra encontrada: 'metodos' coincide con lexema: METODOS - Linea 10 | Columna: 3
-Palabra encontrada: 'publicos' coincide con lexema: PUBLICOS - Linea 10 | Columna: 11
-Palabra encontrada: ':' coincide con lexema: DOSPUNTOS - Linea 10 | Columna: 19
-Fin de linea encontrado - Linea 10 | Columna: 20
-Palabra encontrada: 'constructor' coincide con lexema: CONSTRUCTOR - Linea 11 | Columna: 3
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 11 | Columna: 15
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 11 | Columna: 16
-Palabra encontrada: 'a' coincide con lexema: VARIABLE - Linea 11 | Columna: 23
-Palabra encontrada: ',' coincide con lexema: COMA - Linea 11 | Columna: 24
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 11 | Columna: 26
-Palabra encontrada: 'l' coincide con lexema: VARIABLE - Linea 11 | Columna: 33
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 11 | Columna: 34
-Fin de linea encontrado - Linea 11 | Columna: 35
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 12 | Columna: 5
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 12 | Columna: 11
-Palabra encontrada: 'a' coincide con lexema: VARIABLE - Linea 12 | Columna: 13
-Fin de linea encontrado - Linea 12 | Columna: 14
-Palabra encontrada: 'largo' coincide con lexema: VARIABLE - Linea 13 | Columna: 5
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 13 | Columna: 11
-Palabra encontrada: 'l' coincide con lexema: VARIABLE - Linea 13 | Columna: 13
-Fin de linea encontrado - Linea 13 | Columna: 14
-Fin de linea encontrado - Linea 14 | Columna: 1
-Palabra encontrada: 'destructor' coincide con lexema: DESTRUCTOR - Linea 15 | Columna: 1
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 15 | Columna: 11
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 15 | Columna: 12
-Fin de linea encontrado - Linea 15 | Columna: 13
-Palabra encontrada: 'eliminar' coincide con lexema: ELIMINAR - Linea 16 | Columna: 3
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 16 | Columna: 12
-Fin de linea encontrado - Linea 16 | Columna: 17
-Fin de linea encontrado - Linea 17 | Columna: 1
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 18 | Columna: 1
-Palabra encontrada: 'obtenerArea' coincide con lexema: VARIABLE - Linea 18 | Columna: 8
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 18 | Columna: 19
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 18 | Columna: 20
-Fin de linea encontrado - Linea 18 | Columna: 21
-Comentario - Linea 19 | Columna: 1
-Comentario - Linea 20 | Columna: 1
-Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 21 | Columna: 3
-Palabra encontrada: 'multiplicar' coincide con lexema: VARIABLE - Linea 21 | Columna: 12
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 21 | Columna: 23
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 21 | Columna: 24
-Palabra encontrada: ',' coincide con lexema: COMA - Linea 21 | Columna: 29
-Palabra encontrada: 'largo' coincide con lexema: VARIABLE - Linea 21 | Columna: 31
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 21 | Columna: 36
-Fin de linea encontrado - Linea 21 | Columna: 37
-Fin de linea encontrado - Linea 22 | Columna: 1
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 23 | Columna: 1
-Palabra encontrada: 'Principal' coincide con lexema: PRINCIPAL - Linea 23 | Columna: 8
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 23 | Columna: 17
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 23 | Columna: 18
-Fin de linea encontrado - Linea 23 | Columna: 19
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 24 | Columna: 3
-Palabra encontrada: 'r' coincide con lexema: VARIABLE - Linea 24 | Columna: 14
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 24 | Columna: 16
-Palabra encontrada: 'instanciar' coincide con lexema: INSTANCIAR - Linea 24 | Columna: 18
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 24 | Columna: 29
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 24 | Columna: 40
-Palabra encontrada: '2' coincide con lexema: NUMEROS - Linea 24 | Columna: 41
-Palabra encontrada: ',' coincide con lexema: COMA - Linea 24 | Columna: 43
-Palabra encontrada: '4' coincide con lexema: NUMEROS - Linea 24 | Columna: 45
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 24 | Columna: 46
-Fin de linea encontrado - Linea 24 | Columna: 47
-Comentario - Linea 25 | Columna: 3
-Palabra encontrada: 'escribir' coincide con lexema: ESCRIBIR - Linea 26 | Columna: 3
-Palabra encontrada: 'r' coincide con lexema: VARIABLE - Linea 26 | Columna: 12
-Palabra encontrada: '.' coincide con lexema: PUNTO - Linea 26 | Columna: 13
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 26 | Columna: 14
-Fin de linea encontrado - Linea 26 | Columna: 19
-Fin de linea encontrado - Linea 27 | Columna: 1
-Comentario - Linea 28 | Columna: 1
-Fin de linea encontrado - Linea 29 | Columna: 1
-Palabra encontrada: 'si' coincide con lexema: SI - Linea 30 | Columna: 1
-Palabra encontrada: 'numero' coincide con lexema: VARIABLE - Linea 30 | Columna: 4
-Palabra encontrada: '%' coincide con lexema: MODULO - Linea 30 | Columna: 11
-Palabra encontrada: '2' coincide con lexema: NUMEROS - Linea 30 | Columna: 13
-Palabra encontrada: 'entonces' coincide con lexema: ENTONCES - Linea 30 | Columna: 15
-Fin de linea encontrado - Linea 30 | Columna: 23
-Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 31 | Columna: 1
-Palabra encontrada: 'verdadero' coincide con lexema: VERDADERO - Linea 31 | Columna: 10
-Fin de linea encontrado - Linea 31 | Columna: 19
-Palabra encontrada: 'sino' coincide con lexema: SINO - Linea 32 | Columna: 1
-Fin de linea encontrado - Linea 32 | Columna: 5
-Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 33 | Columna: 1
-Palabra encontrada: 'falso' coincide con lexema: FALSO - Linea 33 | Columna: 10
-Fin de linea encontrado - Linea 33 | Columna: 15
-Fin de linea encontrado - Linea 34 | Columna: 1
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 35 | Columna: 1
-Palabra encontrada: 'Principal' coincide con lexema: PRINCIPAL - Linea 35 | Columna: 8
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 35 | Columna: 18
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 35 | Columna: 19
-Fin de linea encontrado - Linea 35 | Columna: 20
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 36 | Columna: 3
-Palabra encontrada: 'a' coincide con lexema: VARIABLE - Linea 36 | Columna: 10
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 36 | Columna: 12
-Palabra encontrada: '1' coincide con lexema: NUMEROS - Linea 36 | Columna: 14
-Palabra encontrada: ';' coincide con lexema: PUNTOYCOMA - Linea 36 | Columna: 15
-Fin de linea encontrado - Linea 36 | Columna: 16
-Palabra encontrada: 'si' coincide con lexema: SI - Linea 37 | Columna: 3
-Palabra encontrada: 'esImpar' coincide con lexema: VARIABLE - Linea 37 | Columna: 6
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 37 | Columna: 14
-Palabra encontrada: 'a' coincide con lexema: VARIABLE - Linea 37 | Columna: 16
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 37 | Columna: 18
-Palabra encontrada: 'entonces' coincide con lexema: ENTONCES - Linea 37 | Columna: 20
-Fin de linea encontrado - Linea 37 | Columna: 28
-Palabra encontrada: 'escribir' coincide con lexema: ESCRIBIR - Linea 38 | Columna: 5
-Palabra encontrada: 'a' coincide con lexema: VARIABLE - Linea 38 | Columna: 14
-Palabra encontrada: ',' coincide con lexema: COMA - Linea 38 | Columna: 16
-Cadena de texto (string) " es impar . " - Linea 38 | Columna: 17
-Fin de linea encontrado - Linea 38 | Columna: 31
-Palabra encontrada: 'sino' coincide con lexema: SINO - Linea 39 | Columna: 3
-Fin de linea encontrado - Linea 39 | Columna: 7
-Palabra encontrada: 'escribir' coincide con lexema: ESCRIBIR - Linea 40 | Columna: 5
-Palabra encontrada: 'a' coincide con lexema: VARIABLE - Linea 40 | Columna: 14
-Fin de linea encontrado - Linea 40 | Columna: 15
-Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 41 | Columna: 3
-Palabra encontrada: '0' coincide con lexema: NUMEROS - Linea 41 | Columna: 12
-Fin de linea encontrado - Linea 41 | Columna: 13
-Fin de linea encontrado - Linea 42 | Columna: 1
-Comentario - Linea 43 | Columna: 1
-Fin de linea encontrado - Linea 44 | Columna: 1
-Palabra encontrada: 'clase' coincide con lexema: CLASE - Linea 45 | Columna: 1
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 45 | Columna: 7
-Fin de linea encontrado - Linea 45 | Columna: 17
-Palabra encontrada: 'propiedades' coincide con lexema: PROPIEDADES - Linea 46 | Columna: 3
-Palabra encontrada: 'publicas' coincide con lexema: PUBLICAS - Linea 46 | Columna: 15
-Palabra encontrada: ':' coincide con lexema: DOSPUNTOS - Linea 46 | Columna: 23
-Fin de linea encontrado - Linea 46 | Columna: 24
-Palabra encontrada: 'estatico' coincide con lexema: ESTATICO - Linea 47 | Columna: 5
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 47 | Columna: 14
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 47 | Columna: 21
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 47 | Columna: 27
-Palabra encontrada: '2' coincide con lexema: NUMEROS - Linea 47 | Columna: 29
-Fin de linea encontrado - Linea 47 | Columna: 30
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 48 | Columna: 3
-Palabra encontrada: 'largo' coincide con lexema: VARIABLE - Linea 48 | Columna: 10
-Fin de linea encontrado - Linea 48 | Columna: 15
-Palabra encontrada: 'metodos' coincide con lexema: METODOS - Linea 49 | Columna: 3
-Palabra encontrada: 'publicos' coincide con lexema: PUBLICOS - Linea 49 | Columna: 11
-Palabra encontrada: ':' coincide con lexema: DOSPUNTOS - Linea 49 | Columna: 20
-Fin de linea encontrado - Linea 49 | Columna: 21
-Palabra encontrada: 'constructor' coincide con lexema: CONSTRUCTOR - Linea 50 | Columna: 3
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 50 | Columna: 15
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 50 | Columna: 17
-Palabra encontrada: 'l' coincide con lexema: VARIABLE - Linea 50 | Columna: 24
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 50 | Columna: 26
-Fin de linea encontrado - Linea 50 | Columna: 27
-Palabra encontrada: 'largo' coincide con lexema: VARIABLE - Linea 51 | Columna: 5
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 51 | Columna: 11
-Palabra encontrada: 'l' coincide con lexema: VARIABLE - Linea 51 | Columna: 13
-Fin de linea encontrado - Linea 51 | Columna: 14
-Fin de linea encontrado - Linea 52 | Columna: 1
-Palabra encontrada: 'destructor' coincide con lexema: DESTRUCTOR - Linea 53 | Columna: 3
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 53 | Columna: 14
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 53 | Columna: 15
-Fin de linea encontrado - Linea 53 | Columna: 16
-Palabra encontrada: 'eliminar' coincide con lexema: ELIMINAR - Linea 54 | Columna: 5
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 54 | Columna: 14
-Fin de linea encontrado - Linea 54 | Columna: 19
-Fin de linea encontrado - Linea 55 | Columna: 1
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 56 | Columna: 5
-Palabra encontrada: 'obtenerArea' coincide con lexema: VARIABLE - Linea 56 | Columna: 12
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 56 | Columna: 24
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 56 | Columna: 25
-Fin de linea encontrado - Linea 56 | Columna: 26
-Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 57 | Columna: 7
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 57 | Columna: 16
-Palabra encontrada: '*' coincide con lexema: MULTIPLICACION - Linea 57 | Columna: 22
-Palabra encontrada: 'largo' coincide con lexema: VARIABLE - Linea 57 | Columna: 24
-Fin de linea encontrado - Linea 57 | Columna: 29
-Fin de linea encontrado - Linea 58 | Columna: 1
-Comentario de varias lineas - Linea 59 | Columna: 5
-Fin de linea encontrado - Linea 63 | Columna: 7
-Palabra encontrada: 'estatico' coincide con lexema: ESTATICO - Linea 64 | Columna: 5
-Palabra encontrada: 'nulo' coincide con lexema: NULO - Linea 64 | Columna: 14
-Palabra encontrada: 'anchoCuadrado' coincide con lexema: VARIABLE - Linea 64 | Columna: 19
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 64 | Columna: 32
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 64 | Columna: 33
-Fin de linea encontrado - Linea 64 | Columna: 34
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 65 | Columna: 5
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 65 | Columna: 11
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 65 | Columna: 13
-Palabra encontrada: '*' coincide con lexema: MULTIPLICACION - Linea 65 | Columna: 19
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 65 | Columna: 21
-Fin de linea encontrado - Linea 65 | Columna: 26
-Comentario - Linea 66 | Columna: 4
-Comentario - Linea 67 | Columna: 4
-Fin de linea encontrado - Linea 68 | Columna: 3
-Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 69 | Columna: 1
-Palabra encontrada: 'Principal' coincide con lexema: PRINCIPAL - Linea 69 | Columna: 8
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 69 | Columna: 17
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 69 | Columna: 18
-Fin de linea encontrado - Linea 69 | Columna: 19
-Comentario - Linea 70 | Columna: 3
-Palabra encontrada: 'escribir' coincide con lexema: ESCRIBIR - Linea 71 | Columna: 3
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 71 | Columna: 12
-Palabra encontrada: '.' coincide con lexema: PUNTO - Linea 71 | Columna: 22
-Palabra encontrada: 'ancho' coincide con lexema: VARIABLE - Linea 71 | Columna: 23
-Fin de linea encontrado - Linea 71 | Columna: 28
-Comentario - Linea 72 | Columna: 3
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 73 | Columna: 3
-Palabra encontrada: 'r1' coincide con lexema: VARIABLE - Linea 73 | Columna: 14
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 73 | Columna: 17
-Palabra encontrada: 'instanciar' coincide con lexema: INSTANCIAR - Linea 73 | Columna: 19
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 73 | Columna: 30
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 73 | Columna: 40
-Palabra encontrada: '5' coincide con lexema: NUMEROS - Linea 73 | Columna: 41
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 73 | Columna: 42
-Fin de linea encontrado - Linea 73 | Columna: 43
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 74 | Columna: 3
-Palabra encontrada: 'r2' coincide con lexema: VARIABLE - Linea 74 | Columna: 14
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 74 | Columna: 17
-Palabra encontrada: 'instanciar' coincide con lexema: INSTANCIAR - Linea 74 | Columna: 19
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 74 | Columna: 30
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 74 | Columna: 40
-Palabra encontrada: '10' coincide con lexema: NUMEROS - Linea 74 | Columna: 41
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 74 | Columna: 43
-Fin de linea encontrado - Linea 74 | Columna: 44
-Fin de linea encontrado - Linea 75 | Columna: 1
-Comentario - Linea 76 | Columna: 3
-Comentario - Linea 77 | Columna: 3
-Palabra encontrada: 'Rectangulo' coincide con lexema: VARIABLECLASE - Linea 78 | Columna: 3
-Palabra encontrada: '.' coincide con lexema: PUNTO - Linea 78 | Columna: 13
-Palabra encontrada: 'anchoCuadrado' coincide con lexema: VARIABLE - Linea 78 | Columna: 14
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 78 | Columna: 27
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 78 | Columna: 28
-Fin de linea encontrado - Linea 78 | Columna: 29
-Fin de linea encontrado - Linea 79 | Columna: 1
-Comentario - Linea 80 | Columna: 3
-Fin de linea encontrado - Linea 81 | Columna: 1
-Comentario - Linea 82 | Columna: 3
-Palabra encontrada: 'escribir' coincide con lexema: ESCRIBIR - Linea 83 | Columna: 3
-Palabra encontrada: 'r1' coincide con lexema: VARIABLE - Linea 83 | Columna: 12
-Palabra encontrada: '.' coincide con lexema: PUNTO - Linea 83 | Columna: 14
-Palabra encontrada: 'obtenerArea' coincide con lexema: VARIABLE - Linea 83 | Columna: 15
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 83 | Columna: 26
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 83 | Columna: 27
-Palabra encontrada: ',' coincide con lexema: COMA - Linea 83 | Columna: 28
-Palabra encontrada: 'r2' coincide con lexema: VARIABLE - Linea 83 | Columna: 30
-Palabra encontrada: '.' coincide con lexema: PUNTO - Linea 83 | Columna: 32
-Palabra encontrada: 'obtenerArea' coincide con lexema: VARIABLE - Linea 83 | Columna: 33
-Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 83 | Columna: 44
-Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 83 | Columna: 45
-Fin de linea encontrado - Linea 83 | Columna: 46
-Comentario - Linea 84 | Columna: 3
-Fin de linea encontrado - Linea 85 | Columna: 1
-Comentario - Linea 86 | Columna: 1
-Fin de linea encontrado - Linea 87 | Columna: 1
-Palabra encontrada: 'cadena' coincide con lexema: CADENA - Linea 88 | Columna: 3
-ERROR: Variable mal escrita: '40aadf244' - Linea 88 | Columna: 10
-Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 88 | Columna: 20
-Cadena de texto (string) "string" - Linea 88 | Columna: 22
-Fin de linea encontrado - Linea 88 | Columna: 30
-Fin de linea encontrado - Linea 89 | Columna: 1
+LEX: Palabra encontrada: 'incluir' coincide con lexema: INCLUIR - Linea 1 | Columna: 1
+LEX: Cadena de texto (string) "./jflex-test.iml" - Linea 1 | Columna: 9
+LEX: Fin de linea encontrado - Linea 1 | Columna: 27
+LEX: Palabra encontrada: 'incluir' coincide con lexema: INCLUIR - Linea 2 | Columna: 1
+LEX: Cadena de texto (string) "./src/main/java/com/mycompany/jflex/test/cup/prueba.cup" - Linea 2 | Columna: 9
+LEX: Fin de linea encontrado - Linea 2 | Columna: 66
+LEX: Palabra encontrada: 'clase' coincide con lexema: CLASE - Linea 3 | Columna: 1
+LEX: Palabra encontrada: 'Rectangulo' coincide con lexema: IDCLASE - Linea 3 | Columna: 7
+LEX: Fin de linea encontrado - Linea 3 | Columna: 17
+LEX: Palabra encontrada: 'propiedades' coincide con lexema: PROPIEDADES - Linea 4 | Columna: 3
+LEX: Palabra encontrada: 'publicas' coincide con lexema: PUBLICAS - Linea 4 | Columna: 15
+LEX: Palabra encontrada: ':' coincide con lexema: DOSPUNTOS - Linea 4 | Columna: 23
+LEX: Fin de linea encontrado - Linea 4 | Columna: 24
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 5 | Columna: 5
+LEX: Palabra encontrada: 'ancho' coincide con lexema: ID - Linea 5 | Columna: 12
+LEX: Fin de linea encontrado - Linea 5 | Columna: 17
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 6 | Columna: 5
+LEX: Palabra encontrada: 'largo' coincide con lexema: ID - Linea 6 | Columna: 12
+LEX: Fin de linea encontrado - Linea 6 | Columna: 17
+LEX: Fin de linea encontrado - Linea 7 | Columna: 1
+LEX: Palabra encontrada: 'metodos' coincide con lexema: METODOS - Linea 8 | Columna: 3
+LEX: Palabra encontrada: 'publicos' coincide con lexema: PUBLICOS - Linea 8 | Columna: 11
+LEX: Palabra encontrada: ':' coincide con lexema: DOSPUNTOS - Linea 8 | Columna: 20
+LEX: Fin de linea encontrado - Linea 8 | Columna: 21
+LEX: Palabra encontrada: 'constructor' coincide con lexema: CONSTRUCTOR - Linea 9 | Columna: 5
+LEX: Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 9 | Columna: 17
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 9 | Columna: 19
+LEX: Palabra encontrada: 'a' coincide con lexema: ID - Linea 9 | Columna: 26
+LEX: Palabra encontrada: ',' coincide con lexema: COMA - Linea 9 | Columna: 28
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 9 | Columna: 30
+LEX: Palabra encontrada: 'l' coincide con lexema: ID - Linea 9 | Columna: 37
+LEX: Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 9 | Columna: 39
+LEX: Fin de linea encontrado - Linea 9 | Columna: 40
+LEX: Palabra encontrada: 'ancho' coincide con lexema: ID - Linea 10 | Columna: 7
+LEX: Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 10 | Columna: 13
+LEX: Palabra encontrada: 'a' coincide con lexema: ID - Linea 10 | Columna: 15
+LEX: Fin de linea encontrado - Linea 10 | Columna: 16
+LEX: Palabra encontrada: 'largo' coincide con lexema: ID - Linea 11 | Columna: 7
+LEX: Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 11 | Columna: 13
+LEX: Palabra encontrada: 'l' coincide con lexema: ID - Linea 11 | Columna: 15
+LEX: Fin de linea encontrado - Linea 11 | Columna: 16
+LEX: Palabra encontrada: 'metodos' coincide con lexema: METODOS - Linea 12 | Columna: 3
+LEX: Palabra encontrada: 'privados' coincide con lexema: PRIVADOS - Linea 12 | Columna: 11
+LEX: Palabra encontrada: ':' coincide con lexema: DOSPUNTOS - Linea 12 | Columna: 19
+LEX: Fin de linea encontrado - Linea 12 | Columna: 21
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 13 | Columna: 5
+LEX: Palabra encontrada: 'obtenerArea' coincide con lexema: ID - Linea 13 | Columna: 12
+LEX: Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 13 | Columna: 23
+LEX: Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 13 | Columna: 24
+LEX: Fin de linea encontrado - Linea 13 | Columna: 25
+LEX: Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 14 | Columna: 7
+LEX: Palabra encontrada: 'ancho' coincide con lexema: ID - Linea 14 | Columna: 16
+LEX: Palabra encontrada: '*' coincide con lexema: MULTIPLICACION - Linea 14 | Columna: 22
+LEX: Palabra encontrada: 'largo' coincide con lexema: ID - Linea 14 | Columna: 24
+LEX: Fin de linea encontrado - Linea 14 | Columna: 29
+LEX: Palabra encontrada: 'metodos' coincide con lexema: METODOS - Linea 15 | Columna: 3
+LEX: Palabra encontrada: 'protegidos' coincide con lexema: PROTEGIDOS - Linea 15 | Columna: 11
+LEX: Palabra encontrada: ':' coincide con lexema: DOSPUNTOS - Linea 15 | Columna: 21
+LEX: Fin de linea encontrado - Linea 15 | Columna: 23
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 16 | Columna: 5
+LEX: Palabra encontrada: 'cuadrado' coincide con lexema: ID - Linea 16 | Columna: 12
+LEX: Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 16 | Columna: 20
+LEX: Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 16 | Columna: 21
+LEX: Fin de linea encontrado - Linea 16 | Columna: 22
+LEX: Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 17 | Columna: 7
+LEX: Palabra encontrada: 'ancho' coincide con lexema: ID - Linea 17 | Columna: 16
+LEX: Palabra encontrada: '*' coincide con lexema: MULTIPLICACION - Linea 17 | Columna: 22
+LEX: Palabra encontrada: 'ancho' coincide con lexema: ID - Linea 17 | Columna: 24
+LEX: Fin de linea encontrado - Linea 17 | Columna: 29
+LEX: Palabra encontrada: 'Principal' coincide con lexema: PRINCIPAL - Linea 18 | Columna: 3
+LEX: Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 18 | Columna: 13
+LEX: Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 18 | Columna: 14
+LEX: Fin de linea encontrado - Linea 18 | Columna: 16
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 19 | Columna: 3
+LEX: Palabra encontrada: 'aux' coincide con lexema: ID - Linea 19 | Columna: 10
+LEX: Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 19 | Columna: 14
+LEX: Palabra encontrada: '23' coincide con lexema: NUMEROS - Linea 19 | Columna: 16
+LEX: Palabra encontrada: ';' coincide con lexema: PUNTOYCOMA - Linea 19 | Columna: 18
+LEX: Fin de linea encontrado - Linea 19 | Columna: 19
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 20 | Columna: 3
+LEX: Palabra encontrada: 'aux' coincide con lexema: ID - Linea 20 | Columna: 10
+LEX: Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 20 | Columna: 14
+LEX: Palabra encontrada: '23' coincide con lexema: NUMEROS - Linea 20 | Columna: 16
+LEX: Palabra encontrada: ';' coincide con lexema: PUNTOYCOMA - Linea 20 | Columna: 18
+LEX: Fin de linea encontrado - Linea 20 | Columna: 19
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 21 | Columna: 3
+LEX: Palabra encontrada: 'aux' coincide con lexema: ID - Linea 21 | Columna: 10
+LEX: Palabra encontrada: '=' coincide con lexema: IGUAL - Linea 21 | Columna: 14
+LEX: Palabra encontrada: '23' coincide con lexema: NUMEROS - Linea 21 | Columna: 16
+LEX: Palabra encontrada: ';' coincide con lexema: PUNTOYCOMA - Linea 21 | Columna: 18
+LEX: Fin de linea encontrado - Linea 21 | Columna: 19
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 22 | Columna: 3
+LEX: Palabra encontrada: 'funcionSuelta' coincide con lexema: ID - Linea 22 | Columna: 10
+LEX: Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 22 | Columna: 24
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 22 | Columna: 25
+LEX: Palabra encontrada: 'p' coincide con lexema: ID - Linea 22 | Columna: 32
+LEX: Palabra encontrada: ',' coincide con lexema: COMA - Linea 22 | Columna: 33
+LEX: Palabra encontrada: 'entero' coincide con lexema: ENTERO - Linea 22 | Columna: 35
+LEX: Palabra encontrada: 'a' coincide con lexema: ID - Linea 22 | Columna: 42
+LEX: Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 22 | Columna: 43
+LEX: Fin de linea encontrado - Linea 22 | Columna: 45
+LEX: Palabra encontrada: 'devolver' coincide con lexema: DEVOLVER - Linea 23 | Columna: 5
+LEX: Palabra encontrada: 'a' coincide con lexema: ID - Linea 23 | Columna: 14
+LEX: Palabra encontrada: '*' coincide con lexema: MULTIPLICACION - Linea 23 | Columna: 16
+LEX: Palabra encontrada: '4' coincide con lexema: NUMEROS - Linea 23 | Columna: 18
+LEX: Palabra encontrada: '+' coincide con lexema: SUMA - Linea 23 | Columna: 20
+LEX: Palabra encontrada: 'p' coincide con lexema: ID - Linea 23 | Columna: 22
+LEX: Fin de linea encontrado - Linea 23 | Columna: 23
+LEX: Palabra encontrada: 'real' coincide con lexema: REAL - Linea 24 | Columna: 3
+LEX: Palabra encontrada: 'seno' coincide con lexema: SENO - Linea 24 | Columna: 8
+LEX: Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 24 | Columna: 12
+LEX: Palabra encontrada: 'real' coincide con lexema: REAL - Linea 24 | Columna: 13
+LEX: Palabra encontrada: 'n' coincide con lexema: ID - Linea 24 | Columna: 18
+LEX: Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 24 | Columna: 19
+LEX: Fin de linea encontrado - Linea 24 | Columna: 21
+LEX: Palabra encontrada: 'real' coincide con lexema: REAL - Linea 25 | Columna: 3
+LEX: Palabra encontrada: 'tangente' coincide con lexema: TANGENTE - Linea 25 | Columna: 8
+LEX: Palabra encontrada: '(' coincide con lexema: INICIOPARENTESIS - Linea 25 | Columna: 16
+LEX: Palabra encontrada: 'real' coincide con lexema: REAL - Linea 25 | Columna: 17
+LEX: Palabra encontrada: 'n2' coincide con lexema: ID - Linea 25 | Columna: 22
+LEX: Palabra encontrada: ')' coincide con lexema: FINALPARENTESIS - Linea 25 | Columna: 24
+LEX: Fin de linea encontrado - Linea 25 | Columna: 25

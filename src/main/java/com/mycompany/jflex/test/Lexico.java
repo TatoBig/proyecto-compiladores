@@ -1061,7 +1061,7 @@ class Lexico implements java_cup.runtime.Scanner {
         switch (zzAction < 0 ? zzAction : ZZ_ACTION[zzAction]) {
           case 1:
             { String lex = "LEX: ERROR: Palabra o simbolo no reconocido: '" + yytext() + "' en linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             }
             // fall through
@@ -1073,7 +1073,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 81: break;
           case 3:
             { String lex = "LEX: Fin de linea encontrado - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.FINLINEA);
             }
@@ -1081,7 +1081,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 82: break;
           case 4:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: MODULO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.MODULO);
             }
@@ -1089,7 +1089,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 83: break;
           case 5:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: INICIOPARENTESIS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.INICIOPARENTESIS);
             }
@@ -1097,7 +1097,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 84: break;
           case 6:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: FINALPARENTESIS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.FINALPARENTESIS);
             }
@@ -1105,7 +1105,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 85: break;
           case 7:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: MULTIPLICACION - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.MULTIPLICACION);
             }
@@ -1113,7 +1113,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 86: break;
           case 8:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: SUMA - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.SUMA);
             }
@@ -1121,7 +1121,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 87: break;
           case 9:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: COMA - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.COMA);
             }
@@ -1129,7 +1129,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 88: break;
           case 10:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: RESTA - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.RESTA);
             }
@@ -1137,7 +1137,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 89: break;
           case 11:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PUNTO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PUNTO);
             }
@@ -1145,7 +1145,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 90: break;
           case 12:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: DIVISION - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.DIVISION);
             }
@@ -1153,7 +1153,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 91: break;
           case 13:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: NUMEROS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.NUMEROS);
             }
@@ -1161,7 +1161,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 92: break;
           case 14:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: DOSPUNTOS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.DOSPUNTOS);
             }
@@ -1169,7 +1169,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 93: break;
           case 15:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PUNTOYCOMA - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PUNTOYCOMA);
             }
@@ -1177,7 +1177,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 94: break;
           case 16:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: MENOR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.MENOR);
             }
@@ -1185,7 +1185,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 95: break;
           case 17:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: IGUAL - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.IGUAL);
             }
@@ -1193,7 +1193,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 96: break;
           case 18:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: Mayor - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.MAYOR);
             }
@@ -1201,7 +1201,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 97: break;
           case 19:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: IDCLASE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.IDCLASE);
             }
@@ -1209,7 +1209,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 98: break;
           case 20:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: INICIOCORCHETE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.INICIOCORCHETE);
             }
@@ -1217,7 +1217,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 99: break;
           case 21:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: FINALCORCHETE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.FINALCORCHETE);
             }
@@ -1225,7 +1225,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 100: break;
           case 22:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: ID - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.ID);
             }
@@ -1233,7 +1233,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 101: break;
           case 23:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: INICIOLLAVE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.INICIOLLAVE);
             }
@@ -1241,7 +1241,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 102: break;
           case 24:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: FINALLLAVE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.FINALLLAVE);
             }
@@ -1249,7 +1249,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 103: break;
           case 25:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: DISTINTO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.DISTINTO);
             }
@@ -1257,7 +1257,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 104: break;
           case 26:
             { String lex = "LEX: Cadena de texto (string) " + yytext() + " - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.STRING);
             }
@@ -1265,7 +1265,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 105: break;
           case 27:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: INCREMENTO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.INCREMENTO);
             }
@@ -1273,7 +1273,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 106: break;
           case 28:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: DECREMENTO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.DECREMENTO);
             }
@@ -1281,21 +1281,21 @@ class Lexico implements java_cup.runtime.Scanner {
           case 107: break;
           case 29:
             { String lex = "LEX: Comentario - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             }
             // fall through
           case 108: break;
           case 30:
             { String lex = "LEX: ERROR: Variable mal escrita: '" + yytext() + "' - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             }
             // fall through
           case 109: break;
           case 31:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: MAYOROIGUAL - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.MAYOROIGUAL);
             }
@@ -1303,7 +1303,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 110: break;
           case 32:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: IGUALQUE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.IGUALQUE);
             }
@@ -1311,7 +1311,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 111: break;
           case 33:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: MENOROIGUAL - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.MENOROIGUAL);
             }
@@ -1319,7 +1319,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 112: break;
           case 34:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: OR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.OR);
             }
@@ -1327,7 +1327,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 113: break;
           case 35:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: SI - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.SI);
             }
@@ -1335,7 +1335,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 114: break;
           case 36:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: AND - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.AND);
             }
@@ -1343,14 +1343,14 @@ class Lexico implements java_cup.runtime.Scanner {
           case 115: break;
           case 37:
             { String lex = "LEX: Comentario de varias lineas - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             }
             // fall through
           case 116: break;
           case 38:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: LEER - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.LEER);
             }
@@ -1358,7 +1358,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 117: break;
           case 39:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: NULO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.NULO);
             }
@@ -1366,7 +1366,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 118: break;
           case 40:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: RAIZ - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.RAIZ);
             }
@@ -1374,7 +1374,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 119: break;
           case 41:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: REAL - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.REAL);
             }
@@ -1382,7 +1382,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 120: break;
           case 42:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: SENO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.SENO);
             }
@@ -1390,7 +1390,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 121: break;
           case 43:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: SINO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.SINO);
             }
@@ -1398,7 +1398,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 122: break;
           case 44:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: CLASE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.CLASE);
             }
@@ -1406,7 +1406,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 123: break;
           case 45:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: DESDE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.DESDE);
             }
@@ -1414,7 +1414,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 124: break;
           case 46:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: FALSO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.FALSO);
             }
@@ -1422,7 +1422,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 125: break;
           case 47:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: HACER - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.HACER);
             }
@@ -1430,7 +1430,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 126: break;
           case 48:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: CADENA - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.CADENA);
             }
@@ -1438,7 +1438,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 127: break;
           case 49:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: COSENO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.COSENO);
             }
@@ -1446,7 +1446,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 128: break;
           case 50:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: ENTERO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.ENTERO);
             }
@@ -1454,7 +1454,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 129: break;
           case 51:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: BOLEANO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.BOLEANO);
             }
@@ -1462,7 +1462,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 130: break;
           case 52:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: INCLUIR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.INCLUIR);
             }
@@ -1470,7 +1470,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 131: break;
           case 53:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: METODOS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.METODOS);
             }
@@ -1478,7 +1478,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 132: break;
           case 54:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: DEVOLVER - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.DEVOLVER);
             }
@@ -1486,7 +1486,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 133: break;
           case 55:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: ELIMINAR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.ELIMINAR);
             }
@@ -1494,7 +1494,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 134: break;
           case 56:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: ENTONCES - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.ENTONCES);
             }
@@ -1502,7 +1502,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 135: break;
           case 57:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: ESCRIBIR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.ESCRIBIR);
             }
@@ -1510,7 +1510,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 136: break;
           case 58:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: ESTATICO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.ESTATICO);
             }
@@ -1518,7 +1518,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 137: break;
           case 59:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: EXTIENDE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.EXTIENDE);
             }
@@ -1526,7 +1526,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 138: break;
           case 60:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: MIENTRAS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.MIENTRAS);
             }
@@ -1534,7 +1534,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 139: break;
           case 61:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PRIVADAS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PRIVADAS);
             }
@@ -1542,7 +1542,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 140: break;
           case 62:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PRIVADOS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PRIVADOS);
             }
@@ -1550,7 +1550,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 141: break;
           case 63:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PUBLICAS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PUBLICAS);
             }
@@ -1558,7 +1558,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 142: break;
           case 64:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PUBLICOS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PUBLICOS);
             }
@@ -1566,7 +1566,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 143: break;
           case 65:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: TANGENTE - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.TANGENTE);
             }
@@ -1574,7 +1574,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 144: break;
           case 66:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PRINCIPAL - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PRINCIPAL);
             }
@@ -1582,7 +1582,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 145: break;
           case 67:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: LOGARITMO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.LOGARITMO);
             }
@@ -1590,7 +1590,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 146: break;
           case 68:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: VERDADERO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.VERDADERO);
             }
@@ -1598,7 +1598,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 147: break;
           case 69:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: DESTRUCTOR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.DESTRUCTOR);
             }
@@ -1606,7 +1606,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 148: break;
           case 70:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: INSTANCIAR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.INSTANCIAR);
             }
@@ -1614,7 +1614,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 149: break;
           case 71:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PROTEGIDAS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PROTEGIDAS);
             }
@@ -1622,7 +1622,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 150: break;
           case 72:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PROTEGIDOS - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PROTEGIDOS);
             }
@@ -1630,7 +1630,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 151: break;
           case 73:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: CADENA_REAL - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.CADENA_REAL);
             }
@@ -1638,7 +1638,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 152: break;
           case 74:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: CONSTRUCTOR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.CONSTRUCTOR);
             }
@@ -1646,7 +1646,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 153: break;
           case 75:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: DECREMENTAR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.DECREMENTAR);
             }
@@ -1654,7 +1654,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 154: break;
           case 76:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: INCREMENTAR - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.INCREMENTAR);
             }
@@ -1662,7 +1662,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 155: break;
           case 77:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: PROPIEDADES - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.PROPIEDADES);
             }
@@ -1670,7 +1670,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 156: break;
           case 78:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: CADENA_ENTERO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.CADENA_ENTERO);
             }
@@ -1678,7 +1678,7 @@ class Lexico implements java_cup.runtime.Scanner {
           case 157: break;
           case 79:
             { String lex = "LEX: Palabra encontrada: '" + yytext() + "' coincide con lexema: CADENA_BOLEANO - Linea " + (yyline+1) + " | Columna: " + (yycolumn+1);
-            System.out.println(lex);
+            // System.out.println(lex);
             writeLex(lex);
             return new Symbol(sym.CADENA_BOLEANO);
             }

@@ -1,88 +1,26 @@
-// Ejemplo 1
-
-entero multiplicar (entero a, entero b)
-  devolver a * b
-
+incluir "./jflex-test.iml"
+incluir "./src/main/java/com/mycompany/jflex/test/cup/prueba.cup"
 clase Rectangulo
   propiedades publicas:
-  entero ancho
-  entero largo  
-  metodos publicos:
-  constructor (entero a, entero l)
-    ancho = a
-    largo = l
+    entero ancho
+    entero largo
 
-destructor()
-  eliminar ancho
-
-entero obtenerArea()
-// acá se hace uso de la función suelta
-// declarada anteriormente
-  devolver multiplicar(ancho, largo)
-
-entero Principal()
-  Rectangulo r = instanciar Rectangulo (2 , 4)
-  // accediendo a la propiedad ancho
-  escribir r.ancho
-
-// Ejemplo 2
-
-si numero % 2 entonces
-devolver verdadero
-sino
-devolver falso
-
-entero Principal ()
-  entero a = 1;
-  si esImpar ( a ) entonces
-    escribir a ," es impar . "
-  sino
-    escribir a
-  devolver 0
-
-// Ejemplo 3 
-
-clase Rectangulo
-  propiedades publicas:
-    estatico entero ancho = 2
-  entero largo
   metodos publicos :
-  constructor ( entero l )
-    largo = l
-
-  destructor ()
-    eliminar ancho
-
-    entero obtenerArea ()
+    constructor ( entero a , entero l )
+      ancho = a
+      largo = l
+  metodos privados: 
+    entero obtenerArea()
       devolver ancho * largo
-
-    /* este método es el único que puede ejecutarse
-    sin necesidad de una instancia de instanciar
-    la clase y lograr modificar la propiedad
-    estática
-    */
-    estatico nulo anchoCuadrado()
-    ancho = ancho * ancho
-   // la siguiente línea genera errores
-   // largo = largo +1
+  metodos protegidos: 
+    entero cuadrado()
+      devolver ancho * ancho
+  Principal () 
+  entero aux = 23;
+  entero aux = 23;
+  entero aux = 23;
+  entero funcionSuelta (entero p, entero a) 
+    devolver a * 4 + p
+  real seno(real n) 
+  real tangente(real n2)
   
-entero Principal()
-  //accediendo a la propiedad ancho
-  escribir Rectangulo.ancho
-  //instanciando dos rectángulos
-  Rectangulo r1 = instanciar Rectangulo(5)
-  Rectangulo r2 = instanciar Rectangulo(10)
-
-  //modificando la variable esta tica
-  //mediante el metodo estático
-  Rectangulo.anchoCuadrado()
-
-  //se ha modificado para todas las clases
-
-  //accediendo a una propiedad privada
-  escribir r1.obtenerArea(), r2.obtenerArea()
-  //el resultado será: 20 40
-
-// Ejemplo 4 - errores
-
-  cadena 40aadf244 = "string"

@@ -81,151 +81,135 @@ non terminal S, Asignar, LineasCodigo, Identificadores, Parametros, TipoDato, Nu
 non terminal Operadores, Operacion, OpcionesEscribir, OpcionesPrivados, OpcionesPublicos, OpcionOperacion;
 non terminal FuncionesSueltas, FuncionesEspeciales, FuncionesMatematicas, FuncionMatematica, FuncionLeer, FuncionEscribir;
 non terminal Declaraciones, BibliotecaExterna;
-non terminal Clases, Constructor, Destructor, AsignarConstructor, MetodoDestructor, MetodosProtegidos, MetodosPrivados, MetodosPublicos, Metodos;
+non terminal Clases, Constructor, Destructor, AsignarConstructor, MetodoDestructor, MetodosProtegidos, MetodosPrivados, MetodosPublicos, Metodos, Repetir;
 non terminal PropPrivadas, PropProtegidas, PropPublicas;
-non terminal Instancia, MetodoInstancia, ErrorInstancia, OpcionesProtegidos, LineaCodigo;
+non terminal Instancia, MetodoInstancia, ErrorInstancia, OpcionesProtegidos, LineaCodigo, FuncionPrincipal, ContenidoPrincipal;
 S ::= LineasCodigo;
 
-// S ::= NUMEROS COMA S
-//       {:
-//         System.out.println("SIN: Encontre NUMEROS COMA S");
-//       :}
-//     {:
-// | NUMEROS
-//       {:
-//         System.out.println("SIN: Encontre NUMEROS");
-//       :}
-//     {:
-// | CLASE
-//       {:
-//         System.out.println("SIN: Encontre CLASE");
-//       :};
 NumReal ::= NUMEROS PUNTO NUMEROS;
 
-TipoDato ::= ENTERO|
-             CADENA|
-             BOLEANO|
-             NULO|
-             REAL;
+TipoDato ::= ENTERO                                                                                 {: System.out.println("SIM: TipoDato -> ENTERO "); :}|
+             CADENA                                                                                 {: System.out.println("SIM: TipoDato -> CADENA "); :}|
+             BOLEANO                                                                                {: System.out.println("SIM: TipoDato -> BOLEANO "); :}|
+             NULO                                                                                   {: System.out.println("SIM: TipoDato -> NULO "); :}|
+             REAL                                                                                   {: System.out.println("SIM: TipoDato -> REAL "); :};
 
-Operadores ::= SUMA|
-               RESTA|
-               MULTIPLICACION|
-               DIVISION|
-               MODULO; 
+Operadores ::= SUMA                                                                                 {: System.out.println("SIM: Operadores -> SUMA "); :}|
+               RESTA                                                                                {: System.out.println("SIM: Operadores -> RESTA "); :}|
+               MULTIPLICACION                                                                       {: System.out.println("SIM: Operadores -> MULTIPLICACION "); :}|
+               DIVISION                                                                             {: System.out.println("SIM: Operadores -> DIVISION "); :}|
+               MODULO                                                                               {: System.out.println("SIM: Operadores -> MODULO "); :}; 
 
-Operacion ::= ID Operadores Operacion|
-              ID|
-              NUMEROS Operadores Operacion|
-              NUMEROS;
+Operacion ::= ID Operadores Operacion                                                               {: System.out.println("SIM: Operacion -> ID Operadores Operacion "); :}|
+              ID                                                                                    {: System.out.println("SIM: Operacion -> ID "); :}|
+              NUMEROS Operadores Operacion                                                          {: System.out.println("SIM: Operacion -> NUMEROS Operadores Operacion "); :}|
+              NUMEROS                                                                               {: System.out.println("SIM: Operacion -> NUMEROS "); :};
 
-Identificadores ::= ID|
-                    ID COMA Identificadores;
+Identificadores ::= ID                                                                              {: System.out.println("SIM: Identificadores -> ID "); :}|
+                    ID COMA Identificadores                                                         {: System.out.println("SIM: Identificadores -> ID COMA Identificadores  "); :};
 
-Asignar ::= ENTERO Identificadores IGUAL NUMEROS PUNTOYCOMA|
-            CADENA Identificadores IGUAL STRING PUNTOYCOMA| 
-            BOLEANO Identificadores IGUAL FALSO PUNTOYCOMA|
-            BOLEANO Identificadores IGUAL VERDADERO PUNTOYCOMA|
-            NULO Identificadores PUNTOYCOMA|
-            REAL Identificadores NumReal|
-            ENTERO Identificadores IGUAL NUMEROS PUNTOYCOMA FINLINEA|
-            CADENA Identificadores IGUAL STRING PUNTOYCOMA FINLINEA|
-            BOLEANO Identificadores IGUAL FALSO PUNTOYCOMA FINLINEA|
-            BOLEANO Identificadores IGUAL VERDADERO PUNTOYCOMA FINLINEA|
-            NULO Identificadores PUNTOYCOMA FINLINEA|
-            REAL Identificadores NumReal FINLINEA;
+Asignar ::= ENTERO Identificadores IGUAL NUMEROS PUNTOYCOMA                                         {: System.out.println("SIM: Asignar -> ENTERO Identificadores IGUAL NUMEROS PUNTOYCOMApoDato "); :}|
+            CADENA Identificadores IGUAL STRING PUNTOYCOMA                                          {: System.out.println("SIM: Asignar -> CADENA Identificadores IGUAL STRING PUNTOYCOMA "); :}| 
+            BOLEANO Identificadores IGUAL FALSO PUNTOYCOMA                                          {: System.out.println("SIM: Asignar -> BOLEANO Identificadores IGUAL FALSO PUNTOYCOMA "); :}|
+            BOLEANO Identificadores IGUAL VERDADERO PUNTOYCOMA                                      {: System.out.println("SIM: Asignar -> BOLEANO Identificadores IGUAL VERDADERO PUNTOYCOMA "); :}|
+            NULO Identificadores PUNTOYCOMA                                                         {: System.out.println("SIM: Asignar -> NULO Identificadores PUNTOYCOMA "); :}|
+            REAL Identificadores NumReal                                                            {: System.out.println("SIM: Asignar -> REAL Identificadores NumReal "); :}|
+            ENTERO Identificadores IGUAL NUMEROS PUNTOYCOMA FINLINEA                                {: System.out.println("SIM: Asignar -> ENTERO Identificadores IGUAL NUMEROS PUNTOYCOMA FINLINEA "); :}|
+            CADENA Identificadores IGUAL STRING PUNTOYCOMA FINLINEA                                 {: System.out.println("SIM: Asignar -> CADENA Identificadores IGUAL STRING PUNTOYCOMA FINLINEA "); :}|
+            BOLEANO Identificadores IGUAL FALSO PUNTOYCOMA FINLINEA                                 {: System.out.println("SIM: Asignar -> BOLEANO Identificadores IGUAL FALSO PUNTOYCOMA FINLINEA "); :}|
+            BOLEANO Identificadores IGUAL VERDADERO PUNTOYCOMA FINLINEA                             {: System.out.println("SIM: Asignar -> BOLEANO Identificadores IGUAL VERDADERO PUNTOYCOMA FINLINEA "); :}|
+            NULO Identificadores PUNTOYCOMA FINLINEA                                                {: System.out.println("SIM: Asignar -> NULO Identificadores PUNTOYCOMA FINLINEA "); :}|
+            REAL Identificadores NumReal FINLINEA                                                   {: System.out.println("SIM: Asignar -> REAL Identificadores NumReal FINLINEA  "); :};
 
-Parametros ::= TipoDato ID|
-               TipoDato ID COMA Parametros;
+Parametros ::= TipoDato ID                                                                          {: System.out.println("SIM: Parametros -> TipoDato ID  "); :}|
+               TipoDato ID COMA Parametros                                                          {: System.out.println("SIM: Parametros -> TipoDato ID COMA Parametros "); :};
             
-FuncionesSueltas  ::= ENTERO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
-                      ENTERO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA| 
-                      REAL ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
-                      REAL ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
-                      BOLEANO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
-                      BOLEANO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
-                      NULO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
-                      NULO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
-                      CADENA ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA|
-                      CADENA ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA;
+FuncionesSueltas  ::= ENTERO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA  {: System.out.println("SIM: FuncionesSueltas -> ENTERO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}|
+                      ENTERO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA             {: System.out.println("SIM: FuncionesSueltas -> ENTERO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}| 
+                      REAL ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA    {: System.out.println("SIM: FuncionesSueltas -> REAL ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}|
+                      REAL ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA               {: System.out.println("SIM: FuncionesSueltas -> REAL ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}|
+                      BOLEANO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA {: System.out.println("SIM: FuncionesSueltas -> BOLEANO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}|
+                      BOLEANO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA            {: System.out.println("SIM: FuncionesSueltas -> BOLEANO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}|
+                      NULO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA    {: System.out.println("SIM: FuncionesSueltas -> NULO ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}|
+                      NULO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA               {: System.out.println("SIM: FuncionesSueltas -> NULO ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}|
+                      CADENA ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA  {: System.out.println("SIM: FuncionesSueltas -> CADENA ID INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :}|
+                      CADENA ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA             {: System.out.println("SIM: FuncionesSueltas -> CADENA ID INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER Operacion FINLINEA "); :};
 
-FuncionesEspeciales ::= REAL CADENA_REAL INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA|
-                        ENTERO CADENA_ENTERO INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA|
-                        BOLEANO CADENA_BOLEANO INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA;                   
+FuncionesEspeciales ::= REAL CADENA_REAL INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA        {: System.out.println("SIM: FuncionesEspeciales -> REAL CADENA_REAL INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA "); :}|
+                        ENTERO CADENA_ENTERO INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA    {: System.out.println("SIM: FuncionesEspeciales -> ENTERO CADENA_ENTERO INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA "); :}|
+                        BOLEANO CADENA_BOLEANO INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA  {: System.out.println("SIM: FuncionesEspeciales -> BOLEANO CADENA_BOLEANO INICIOPARENTESIS CADENA ID FINALPARENTESIS FINLINEA "); :};                   
                 
-OpcionesEscribir ::= ID|
-                     NUMEROS|
-                     STRING;
+OpcionesEscribir ::= ID                                                                     {: System.out.println("SIM: OpcionesEscribir -> ID "); :}|
+                     NUMEROS                                                                {: System.out.println("SIM: OpcionesEscribir -> NUMEROS "); :}|
+                     STRING                                                                 {: System.out.println("SIM: OpcionesEscribir -> STRING "); :};
     
-FuncionEscribir ::= OpcionesEscribir PUNTOYCOMA|
-                    OpcionesEscribir PUNTOYCOMA FINLINEA;
+FuncionEscribir ::= ESCRIBIR OpcionesEscribir PUNTOYCOMA                                             {: System.out.println("SIM: FuncionEscribir -> OpcionesEscribir PUNTOYCOMA "); :};
             
-FuncionLeer ::= LEER ID PUNTOYCOMA;
+FuncionLeer ::= LEER ID PUNTOYCOMA                                                          {: System.out.println("SIM: FuncionLeer -> LEER ID PUNTOYCOMA "); :};
 
-FuncionesMatematicas ::= REAL SENO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA|
-                         REAL COSENO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA|
-                         REAL TANGENTE INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA|
-                         REAL LOGARITMO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA|
-                         REAL RAIZ INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA;
+FuncionesMatematicas ::= REAL SENO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA        {: System.out.println("SIM: FuncionesMatematicas -> REAL SENO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA "); :}|
+                         REAL COSENO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA      {: System.out.println("SIM: FuncionesMatematicas -> REAL COSENO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA"); :}|
+                         REAL TANGENTE INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA    {: System.out.println("SIM: FuncionesMatematicas -> REAL TANGENTE INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA"); :}|
+                         REAL LOGARITMO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA   {: System.out.println("SIM: FuncionesMatematicas -> REAL LOGARITMO INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA"); :}|
+                         REAL RAIZ INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA        {: System.out.println("SIM: FuncionesMatematicas -> REAL RAIZ INICIOPARENTESIS REAL ID FINALPARENTESIS FINLINEA"); :};
 
 /* CLASES */
-Declaraciones ::= TipoDato Identificadores FINLINEA Declaraciones                           {: System.out.println("sim: TipoDato Identificadores FINLINEA Declaraciones"); :}|
-                  TipoDato Identificadores FINLINEA                                         {: System.out.println("sim: TipoDato Identificadores FINLINEA"); :};        
+Declaraciones ::= TipoDato Identificadores FINLINEA Declaraciones                           {: System.out.println("SIM: Declaraciones -> TipoDato Identificadores FINLINEA Declaraciones"); :}|
+                  TipoDato Identificadores FINLINEA                                         {: System.out.println("SIM: Declaraciones -> TipoDato Identificadores FINLINEA"); :};        
 
-PropPublicas ::= PROPIEDADES PUBLICAS DOSPUNTOS FINLINEA Declaraciones PropPrivadas         {: System.out.println("sim: PROPIEDADES PUBLICAS DOSPUNTOS FINLINEA Declaraciones PropPrivadas"); :}|
-                 PropPrivadas                                                               {: System.out.println("sim: PropPrivadas"); :};
+PropPublicas ::= PROPIEDADES PUBLICAS DOSPUNTOS FINLINEA Declaraciones PropPrivadas         {: System.out.println("SIM: PropPublicas -> PROPIEDADES PUBLICAS DOSPUNTOS FINLINEA Declaraciones PropPrivadas"); :}|
+                 PropPrivadas                                                               {: System.out.println("SIM: PropPublicas -> PropPrivadas"); :};
 
-PropPrivadas ::= PROPIEDADES PRIVADAS DOSPUNTOS FINLINEA Declaraciones PropProtegidas       {: System.out.println("sim: PROPIEDADES PRIVADAS DOSPUNTOS FINLINEA Declaraciones PropProtegidas"); :}|
-                 PropProtegidas                                                             {: System.out.println("sim: PropProtegidas"); :};
+PropPrivadas ::= PROPIEDADES PRIVADAS DOSPUNTOS FINLINEA Declaraciones PropProtegidas       {: System.out.println("SIM: PropPrivadas -> PROPIEDADES PRIVADAS DOSPUNTOS FINLINEA Declaraciones PropProtegidas"); :}|
+                 PropProtegidas                                                             {: System.out.println("SIM: PropPrivadas -> PropProtegidas"); :};
 
-PropProtegidas ::= PROPIEDADES PROTEGIDAS DOSPUNTOS FINLINEA Declaraciones                  {: System.out.println("sim: PROPIEDADES PROTEGIDAS DOSPUNTOS FINLINEA Declaraciones FINLINEA"); :}|
-                   FINLINEA                                                                 {: System.out.println("sim: FINLINEA"); :};
+PropProtegidas ::= PROPIEDADES PROTEGIDAS DOSPUNTOS FINLINEA Declaraciones                  {: System.out.println("SIM: PropProtegidas -> PROPIEDADES PROTEGIDAS DOSPUNTOS FINLINEA Declaraciones FINLINEA"); :}|
+                   FINLINEA                                                                 {: System.out.println("SIM: PropProtegidas -> FINLINEA"); :};
 
-MetodosPublicos ::= METODOS PUBLICOS DOSPUNTOS FINLINEA OpcionesPublicos MetodosPrivados    {: System.out.println("sim: METODOS PUBLICOS DOSPUNTOS FINLINEA OpcionesPublicos MetodosPrivados"); :}|
-                    MetodosPrivados                                                         {: System.out.println("sim: MetodosPrivados"); :};
+MetodosPublicos ::= METODOS PUBLICOS DOSPUNTOS FINLINEA OpcionesPublicos MetodosPrivados    {: System.out.println("SIM: MetodosPublicos -> METODOS PUBLICOS DOSPUNTOS FINLINEA OpcionesPublicos MetodosPrivados"); :}|
+                    MetodosPrivados                                                         {: System.out.println("SIM: MetodosPublicos -> MetodosPrivados"); :};
 
-MetodosPrivados ::= METODOS PRIVADOS DOSPUNTOS FINLINEA OpcionesPrivados MetodosProtegidos  {: System.out.println("sim: METODOS PRIVADOS DOSPUNTOS FINLINEA OpcionesPrivados MetodosProtegidos"); :}|
-                    MetodosProtegidos                                                       {: System.out.println("sim: MetodosProtegidos"); :};
+MetodosPrivados ::= METODOS PRIVADOS DOSPUNTOS FINLINEA OpcionesPrivados MetodosProtegidos  {: System.out.println("SIM: MetodosPrivados -> METODOS PRIVADOS DOSPUNTOS FINLINEA OpcionesPrivados MetodosProtegidos"); :}|
+                    MetodosProtegidos                                                       {: System.out.println("SIM: MetodosPrivados -> MetodosProtegidos"); :};
 
-MetodosProtegidos ::= METODOS PROTEGIDOS DOSPUNTOS FINLINEA OpcionesProtegidos              {: System.out.println("sim: METODOS PROTEGIDOS DOSPUNTOS FINLINEA OpcionesProtegidos FINLINEA "); :}|
-                      FINLINEA                                                              {: System.out.println("sim: FINLINEA"); :};
+MetodosProtegidos ::= METODOS PROTEGIDOS DOSPUNTOS FINLINEA OpcionesProtegidos              {: System.out.println("SIM: MetodosProtegidos -> METODOS PROTEGIDOS DOSPUNTOS FINLINEA OpcionesProtegidos FINLINEA "); :}|
+                      FINLINEA                                                              {: System.out.println("SIM: MetodosProtegidos -> FINLINEA"); :};
               
-OpcionesPublicos ::= FuncionesSueltas OpcionesPublicos                                      {: System.out.println("sim: FuncionesSueltas OpcionesPublicos"); :}|
-                     FuncionesSueltas                                                       {: System.out.println("sim: FuncionesSueltas"); :}|
-                     Constructor OpcionesPublicos                                           {: System.out.println("sim: Constructor OpcionesPublicos"); :}|
-                     Constructor                                                            {: System.out.println("sim: Constructor"); :}|
-                     Destructor                                                             {: System.out.println("sim: Destructor");  :};
+OpcionesPublicos ::= FuncionesSueltas OpcionesPublicos                                      {: System.out.println("SIM: OpcionesPublicos -> FuncionesSueltas OpcionesPublicos"); :}|
+                     FuncionesSueltas                                                       {: System.out.println("SIM: OpcionesPublicos -> FuncionesSueltas"); :}|
+                     Constructor OpcionesPublicos                                           {: System.out.println("SIM: OpcionesPublicos -> Constructor OpcionesPublicos"); :}|
+                     Constructor                                                            {: System.out.println("SIM: OpcionesPublicos -> Constructor"); :}|
+                     Destructor                                                             {: System.out.println("SIM: OpcionesPublicos -> Destructor");  :};
 
-OpcionesPrivados ::= FuncionesSueltas OpcionesPrivados                                      {: System.out.println("sim: FuncionesSueltas OpcionesPrivados"); :}|
-                     FuncionesSueltas                                                       {: System.out.println("sim: FuncionesSueltas"); :}|
-                     Constructor OpcionesPrivados                                           {: System.out.println("sim: Constructor OpcionesPublicos"); :}|
-                     Constructor                                                            {: System.out.println("sim: Constructor"); :};
+OpcionesPrivados ::= FuncionesSueltas OpcionesPrivados                                      {: System.out.println("SIM: OpcionesPrivados -> FuncionesSueltas OpcionesPrivados"); :}|
+                     FuncionesSueltas                                                       {: System.out.println("SIM: OpcionesPrivados -> FuncionesSueltas"); :}|
+                     Constructor OpcionesPrivados                                           {: System.out.println("SIM: OpcionesPrivados -> Constructor OpcionesPublicos"); :}|
+                     Constructor                                                            {: System.out.println("SIM: OpcionesPrivados -> Constructor"); :};
 
-OpcionesProtegidos ::= FuncionesSueltas OpcionesProtegidos                                  {: System.out.println("sim:  FuncionesSueltas OpcionesProtegidos");  :}|
-                       FuncionesSueltas                                                     {: System.out.println("sim: FuncionesSueltas"); :};
+OpcionesProtegidos ::= FuncionesSueltas                                                     {: System.out.println("SIM: OpcionesProtegidos -> FuncionesSueltas"); :};
                      
-Clases ::= CLASE IDCLASE FINLINEA PropPublicas MetodosPublicos                              {: System.out.println("sim: CLASE IDCLASE FINLINEA PropPublicas MetodosPublicos"); :}| 
-           CLASE IDCLASE EXTIENDE IDCLASE FINLINEA PropPublicas MetodosPublicos             {: System.out.println("sim: CLASE IDCLASE EXTIENDE IDCLASE FINLINEA PropPublicas MetodosPublicos"); :};
+Clases ::= CLASE IDCLASE FINLINEA PropPublicas MetodosPublicos                              {: System.out.println("SIM: Clases -> CLASE IDCLASE FINLINEA PropPublicas MetodosPublicos"); :}| 
+           CLASE IDCLASE EXTIENDE IDCLASE FINLINEA PropPublicas MetodosPublicos             {: System.out.println("SIM: Clases -> CLASE IDCLASE EXTIENDE IDCLASE FINLINEA PropPublicas MetodosPublicos"); :};
 
 /* CONSTRUCTOR & DESTRUCTOR */
-Constructor ::= CONSTRUCTOR INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA AsignarConstructor{: System.out.println("sim: CONSTRUCTOR INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA AsignarConstructor"); :}|
-                CONSTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA                       {: System.out.println("sim: CONSTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA"); :};
+Constructor ::= CONSTRUCTOR INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA AsignarConstructor{: System.out.println("SIM: Constructor -> CONSTRUCTOR INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA AsignarConstructor"); :}|
+                CONSTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA                       {: System.out.println("SIM: Constructor -> CONSTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA"); :};
                 
-Destructor ::= DESTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoDestructor        {: System.out.println("sim: DESTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoDestructor"); :};
+Destructor ::= DESTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoDestructor        {: System.out.println("SIM: Destructor -> DESTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoDestructor"); :};
 
-MetodoDestructor::= ELIMINAR ID FINLINEA MetodoDestructor                                   {: System.out.println("sim: ELIMINAR ID FINLINEA MetodoDestructor"); :}|
-                    ELIMINAR ID FINLINEA                                                    {: System.out.println("sim: ELIMINAR ID FINLINEA"); :};
+MetodoDestructor::= ELIMINAR ID FINLINEA MetodoDestructor                                   {: System.out.println("SIM: MetodoDestructor -> ELIMINAR ID FINLINEA MetodoDestructor"); :}|
+                    ELIMINAR ID FINLINEA                                                    {: System.out.println("SIM: MetodoDestructor -> ELIMINAR ID FINLINEA"); :};
 
-AsignarConstructor ::= ID IGUAL ID FINLINEA AsignarConstructor                              {: System.out.println("sim: ID IGUAL ID FINLINEA AsignarConstructor"); :}|
-                       ID IGUAL ID FINLINEA                                                 {: System.out.println("sim: ID IGUAL ID FINLINEA"); :};
+AsignarConstructor ::= ID IGUAL ID FINLINEA AsignarConstructor                              {: System.out.println("SIM: AsignarConstructor -> ID IGUAL ID FINLINEA AsignarConstructor"); :}|
+                       ID IGUAL ID FINLINEA                                                 {: System.out.println("SIM: AsignarConstructor -> ID IGUAL ID FINLINEA"); :};
 
 /* INSTANCIACION */
-Instancia ::= IDCLASE ID IGUAL INSTANCIAR IDCLASE INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoInstancia;
+Instancia ::= IDCLASE ID IGUAL INSTANCIAR IDCLASE INICIOPARENTESIS FINALPARENTESIS FINLINEA {: System.out.println("SIM: Instancia -> IDCLASE ID IGUAL INSTANCIAR IDCLASE INICIOPARENTESIS FINALPARENTESIS FINLINEA MetodoInstancia"); :};
 
-MetodoInstancia ::= ESCRIBIR ID PUNTO ID FINLINEA|
-                    ELIMINAR IDCLASE FINLINEA;
+MetodoInstancia ::= ESCRIBIR ID PUNTO ID FINLINEA                                           {: System.out.println("SIM: MetodoInstancia -> ESCRIBIR ID PUNTO ID FINLINEA"); :}|
+                    ELIMINAR IDCLASE FINLINEA                                               {: System.out.println("SIM: MetodoInstancia -> ELIMINAR IDCLASE FINLINEA"); :};
                     
-ErrorInstancia ::= ELIMINAR IDCLASE FINLINEA ESCRIBIR ID PUNTO ID FINLINEA;
+ErrorInstancia ::= ELIMINAR IDCLASE FINLINEA ESCRIBIR ID PUNTO ID FINLINEA                  {: System.out.println("SIM: ErrorInstancia -> ELIMINAR IDCLASE FINLINEA ESCRIBIR ID PUNTO ID FINLINEA"); :};
 
 /* CONDICIONAL */
 /*
@@ -253,18 +237,39 @@ Condicion ::= MAYOR|
               IGUALQUE;
 */
 
-LineasCodigo ::= LineaCodigo LineasCodigo|
-                 LineaCodigo;
+LineasCodigo ::= LineaCodigo LineasCodigo {: System.out.println("SIM: LineasCodigo -> LineasCodigo LineaCodigo"); :}| 
+                 LineaCodigo              {: System.out.println("SIM: LineasCodigo -> LineaCodigo"); :};               
+                 
+LineaCodigo ::= BibliotecaExterna             {: System.out.println("SIM: LineaCodigo -> Bibliotecas"); :}|
+                Clases                        {: System.out.println("SIM: LineaCodigo -> Clases"); :}|
+                FuncionPrincipal              {: System.out.println("SIM: LineaCodigo -> FuncionPrincipal"); :};
 
-LineaCodigo ::= Asignar|
-                FuncionesSueltas|
-                Clases|
-                FuncionesMatematicas|
-                FuncionesEspeciales|
-                FuncionEscribir|
-                FuncionLeer|
-                Instancia|
-                BibliotecaExterna;
+FuncionPrincipal ::= PRINCIPAL INICIOPARENTESIS FINALPARENTESIS FINLINEA Repetir   {: System.out.println("SIM: FuncionPrincipal -> ENTERO PRINCIPAL INICIOPARENTESIS Parametros FINALPARENTESIS FINLINEA ContenidoPrincipal"); :};
+                     
+
+Repetir ::= ContenidoPrincipal Repetir  {: System.out.println("SIM: Repetir -> ContenidoPrincipal Repetir"); :}|
+            ContenidoPrincipal          {: System.out.println("SIM: Repetir -> ContenidoPrincipal"); :};
+
+ContenidoPrincipal ::= FuncionesSueltas                                                       {: System.out.println("SIM: ContenidoPrincipal ->  FuncionesSueltas"); :}|
+                       Instancia                                                              {: System.out.println("SIM: ContenidoPrincipal ->  Instancia"); :}|
+                       FuncionesMatematicas                                                   {: System.out.println("sim: LineaCodigo -> FuncionesMatematicas"); :}|
+                       FuncionesEspeciales                                                    {: System.out.println("sim: LineaCodigo -> FuncionesEspeciales"); :}|
+                       FuncionEscribir                                                        {: System.out.println("SIM: ContenidoPrincipal ->  FuncionEscribir"); :}|
+                       FuncionLeer                                                            {: System.out.println("SIM: ContenidoPrincipal ->  FuncionLeer"); :}|
+                       Asignar;
+
+// LineasCodigo ::= LineaCodigo LineasCodigo|
+//                  LineaCodigo;
+
+// LineaCodigo ::= Asignar                       {: System.out.println("sim: LineaCodigo -> Asignar"); :}|
+//                 FuncionesSueltas              {: System.out.println("sim: LineaCodigo -> FuncionesSueltas"); :}|
+//                 Clases                        {: System.out.println("sim: LineaCodigo -> Clases"); :}|
+//                 FuncionesMatematicas          {: System.out.println("sim: LineaCodigo -> FuncionesMatematicas"); :}|
+//                 FuncionesEspeciales           {: System.out.println("sim: LineaCodigo -> FuncionesEspeciales"); :}|
+//                 FuncionEscribir               {: System.out.println("sim: LineaCodigo -> FuncionEscribir"); :}|
+//                 FuncionLeer                   {: System.out.println("sim: LineaCodigo -> FuncionLeer"); :}|
+//                 Instancia                     {: System.out.println("sim: LineaCodigo -> Instancia"); :}|
+//                 BibliotecaExterna             ;
                 
 /* BIBLIOTECAS */
-BibliotecaExterna ::= INCLUIR STRING FINLINEA{: System.out.println("sim: INCLUIR STRING FINLINEA"); :};
+BibliotecaExterna ::= INCLUIR STRING FINLINEA {: System.out.println("SIM: BibliotecaExterna -> INCLUIR STRING FINLINEA"); :};
