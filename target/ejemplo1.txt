@@ -1,0 +1,10 @@
+clase Rectangulo
+propiedades publicas :
+entero ancho
+entero largo
+
+metodos publicos :
+constructor ( entero a , entero l )
+ancho = a
+largo = l
+

@@ -1,0 +1,26 @@
+incluir "./jflex-test.iml"
+incluir "./src/main/java/com/mycompany/jflex/test/cup/prueba.cup"
+clase Rectangulo
+  propiedades publicas:
+    entero ancho
+    entero largo
+
+  metodos publicos :
+    constructor ( entero a , entero l )
+      ancho = a
+      largo = l
+  metodos privados: 
+    entero obtenerArea()
+      devolver ancho * largo
+  metodos protegidos: 
+    entero cuadrado()
+      devolver ancho * ancho
+  Principal () 
+  entero aux = 23;
+  entero aux = 23;
+  entero aux = 23;
+  entero funcionSuelta (entero p, entero a) 
+    devolver a * 4 + p
+  real seno(real n) 
+  real tangente(real n2)
+  

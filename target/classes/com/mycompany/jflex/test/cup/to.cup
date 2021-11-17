@@ -1,0 +1,357 @@
+package com.mycompany.jflex.test;
+/* Terminal*/
+terminal CLASE, EXTIENDE, PROPIEDADES,  METODOS,  PUBLICAS, PUBLICOS, PROTEGIDOS, PROTEGIDAS, PRIVADAS, PRIVADOS, SI, DEVOLVER, CONSTRUCTOR, DESTRUCTOR, HACER, MIENTRAS, INCREMENTAR, DECREMENTAR, DESDE, INSTANCIAR, INCLUIR;
+terminal SINO, ENTONCES, PRINCIPAL, ESTATICO, DOSPUNTOS, PUNTO, PUNTOYCOMA, COMA, IGUAL, INICIOCORCHETE, FINALCORCHETE, INICIOLLAVE, FINALLLAVE, INICIOPARENTESIS, FINALPARENTESIS, AND, OR, MAYOR, MENOR, MENOROIGUAL, MAYOROIGUAL;
+terminal DISTINTO, VERDADERO, FALSO, IGUALQUE, CADENA, BOLEANO, REAL, ENTERO, NULO, LEER, ESCRIBIR, ELIMINAR, CADENA_ENTERO, CADENA_REAL, CADENA_BOLEANO, SENO, COSENO, TANGENTE, LOGARITMO, RAIZ, SUMA, RESTA, DIVISION, MULTIPLICACION;
+terminal MODULO, INCREMENTO, DECREMENTO, IDCLASE, NUMEROS, FINLINEA, PRUEBA, CadenaString;
+
+/* NON Terminal */
+non terminal S, LineasCodigo, LineaCodigo, Identificador, Identificadores, TipoDato, Condicion, Operadores, Declaracion, Declaraciones, Parametro, Parametros, Bibliotecas, Clases, Propiedades, Metodos, Instancia, FuncionPrincipal;
+non terminal Funciones, Opcionalternatica, Funcion, FuncionesEspeciales, FuncionesMatematicas, FuncionCompuesta, FuncionDesde, FuncionSi, FuncionSino, FuncionHacer, Constructor, Destructor, Incremento, Decremento, ContenidoClases, ContenidoInstancia, ContenidoPrincipal;
+non terminal ContenidoPublico, ContenidoMetodos, Escritura, Escrituras, Escrituraaux, OpcionesEscritura, Lectura, Lecturas, Respuesta, Condicionante, Operacion, OperacionCompuesta, OperacionesCompuesta, Operaciones, OperacionParentesis, Parentesis, Corchete, Corchetes, ContenidoCorchetes;
+non terminal ContenidosCorchete, Llave, Llaves, ContenidoLlaves, ContenidosLlave;
+
+/* Simbolo Inicial */
+S ::= LineasCodigo;
+
+/* Producciones */
+LineasCodigo ::= LineaCodigo;
+                 
+LineaCodigo ::= LineaCodigo Bibliotecas |
+                LineaCodigo Clases |
+                LineaCodigo Escritura|
+                LineaCodigo Lectura|
+                LineaCodigo Funciones|
+                Bibliotecas|
+                Clases|
+                Escritura|
+                Lectura|
+                Funciones|
+                FuncionPrincipal;
+
+
+/* Variables */
+Declaracion ::= TipoDato Identificador FINLINEA Declaraciones|
+                TipoDato Identificador FINLINEA;
+
+Declaraciones ::= Declaraciones Identificador FINLINEA;
+
+TipoDato ::= ENTERO|
+             CADENA|
+             BOLEANO|
+             NULO|
+             REAL;
+
+Identificador ::= Identificador PRUEBA Identificadores|
+                  PRUEBA;
+
+Identificadores ::= COMA PRUEBA;
+
+Parametro ::= TipoDato PRUEBA Parametros|
+              TipoDato PRUEBA;
+
+Parametros ::=  Parametros COMA PRUEBA|
+                COMA PRUEBA;
+/*
+Condicion ::= MAYOR|
+              MENOR|
+              MENOROIGUAL|
+              MAYOROIGUAL|
+              DISTINTO|
+              IGUALQUE;
+
+Operadores ::= SUMA|
+               RESTA|
+               MULTIPLICACION|
+               DIVISION|
+               MODULO;
+
+/*Codigo*/
+
+Bibliotecas ::= INCLUIR CadenaString FINLINEA;
+
+Clases ::= CLASE IDCLASE FINLINEA|
+           CLASE IDCLASE EXTIENDE IDCLASE|
+           CLASE IDCLASE FINLINEA ContenidoClases|
+           CLASE IDCLASE EXTIENDE IDCLASE ContenidoClases;
+
+Propiedades ::= PROPIEDADES PUBLICAS DOSPUNTOS Declaracion PROPIEDADES PRIVADAS DOSPUNTOS Declaracion PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion|
+                PROPIEDADES PUBLICAS DOSPUNTOS Declaracion PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion PROPIEDADES PRIVADAS DOSPUNTOS Declaracion|
+                PROPIEDADES PRIVADAS DOSPUNTOS Declaracion PROPIEDADES PUBLICAS DOSPUNTOS Declaracion PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion|
+                PROPIEDADES PRIVADAS DOSPUNTOS Declaracion PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion PROPIEDADES PUBLICAS DOSPUNTOS Declaracion|
+                PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion PROPIEDADES PUBLICAS DOSPUNTOS Declaracion PROPIEDADES PRIVADAS DOSPUNTOS Declaracion|
+                PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion PROPIEDADES PRIVADAS DOSPUNTOS Declaracion PROPIEDADES PUBLICAS DOSPUNTOS Declaracion|
+                PROPIEDADES PUBLICAS DOSPUNTOS Declaracion PROPIEDADES PRIVADAS DOSPUNTOS Declaracion|
+                PROPIEDADES PUBLICAS DOSPUNTOS Declaracion PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion|
+                PROPIEDADES PRIVADAS DOSPUNTOS Declaracion PROPIEDADES PUBLICAS DOSPUNTOS Declaracion|
+                PROPIEDADES PRIVADAS DOSPUNTOS Declaracion PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion|
+                PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion PROPIEDADES PRIVADAS DOSPUNTOS Declaracion|
+                PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion PROPIEDADES PUBLICAS DOSPUNTOS Declaracion|
+                PROPIEDADES PROTEGIDAS DOSPUNTOS Declaracion|
+                PROPIEDADES PUBLICAS DOSPUNTOS Declaracion|
+                PROPIEDADES PRIVADAS DOSPUNTOS Declaracion;
+
+Metodos ::= METODOS PUBLICOS DOSPUNTOS ContenidoPublico METODOS PRIVADOS DOSPUNTOS ContenidoMetodos METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos|
+            METODOS PUBLICOS DOSPUNTOS ContenidoPublico METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos METODOS PRIVADOS DOSPUNTOS ContenidoMetodos|
+            METODOS PRIVADOS DOSPUNTOS ContenidoMetodos METODOS PUBLICOS DOSPUNTOS ContenidoPublico METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos|
+            METODOS PRIVADOS DOSPUNTOS ContenidoMetodos METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos METODOS PUBLICOS DOSPUNTOS ContenidoPublico|
+            METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos METODOS PUBLICOS DOSPUNTOS ContenidoPublico METODOS PRIVADOS DOSPUNTOS ContenidoMetodos|
+            METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos METODOS PRIVADOS DOSPUNTOS ContenidoMetodos METODOS PUBLICOS DOSPUNTOS ContenidoPublico|
+            METODOS PUBLICOS DOSPUNTOS ContenidoPublico METODOS PRIVADOS DOSPUNTOS ContenidoMetodos|
+            METODOS PUBLICOS DOSPUNTOS ContenidoPublico METODOS PROTEGIDAS DOSPUNTOS ContenidoMetodos|
+            METODOS PRIVADOS DOSPUNTOS ContenidoMetodos METODOS PUBLICOS DOSPUNTOS ContenidoPublico|
+            METODOS PRIVADOS DOSPUNTOS ContenidoMetodos METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos|
+            METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos METODOS PRIVADOS DOSPUNTOS ContenidoMetodos|
+            METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos METODOS PUBLICOS DOSPUNTOS ContenidoPublico|
+            METODOS PROTEGIDOS DOSPUNTOS ContenidoMetodos|
+            METODOS PUBLICOS DOSPUNTOS ContenidoPublico|
+            METODOS PRIVADOS DOSPUNTOS ContenidoMetodos;
+
+Constructor ::= CONSTRUCTOR INICIOPARENTESIS Parametro FINALPARENTESIS FINLINEA Declaracion|
+                CONSTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA Declaracion;
+
+Destructor ::= DESTRUCTOR INICIOPARENTESIS FINALPARENTESIS FINLINEA Declaracion;
+
+Instancia ::= IDCLASE PRUEBA IGUAL INSTANCIAR PRUEBA INICIOPARENTESIS OpcionesEscritura FINALPARENTESIS FINLINEA ContenidoInstancia|
+              IDCLASE PRUEBA IGUAL INSTANCIAR PRUEBA INICIOPARENTESIS FINALPARENTESIS FINLINEA;  
+
+/*Funciones*/
+Funciones ::= Funciones Funcion|
+              Funciones FuncionesEspeciales|
+              Funciones FuncionCompuesta|
+              Funciones FuncionesMatematicas|
+              Funciones FuncionDesde|
+              Funciones FuncionHacer|
+              Funcion|
+              FuncionesEspeciales|
+              FuncionCompuesta|
+              FuncionesMatematicas|
+              FuncionDesde|
+              FuncionHacer;
+
+FuncionPrincipal ::= ENTERO PRINCIPAL INICIOPARENTESIS Parametro FINALPARENTESIS FINLINEA ContenidoPrincipal|
+                     ENTERO PRINCIPAL INICIOPARENTESIS FINALPARENTESIS FINLINEA Instancia;
+
+/*
+Funcion ::=   TipoDato PRUEBA INICIOPARENTESIS Parametro FINALPARENTESIS FINLINEA DEVOLVER OperacionCompuesta FINLINEA|
+              TipoDato PRUEBA INICIOPARENTESIS FINALPARENTESIS FINLINEA DEVOLVER OperacionCompuesta FINLINEA| 
+              TipoDato PRUEBA INICIOPARENTESIS FINALPARENTESIS FINLINEA|
+              ESTATICO NULO PRUEBA INICIOPARENTESIS FINALPARENTESIS FINLINEA;
+
+
+              
+FuncionesEspeciales ::= REAL CADENA_REAL INICIOPARENTESIS CADENA PRUEBA FINALPARENTESIS FINLINEA|
+                        ENTERO CADENA_ENTERO INICIOPARENTESIS CADENA PRUEBA FINALPARENTESIS FINLINEA|
+                        BOLEANO CADENA_BOLEANO INICIOPARENTESIS CADENA PRUEBA FINALPARENTESIS FINLINEA;
+
+FuncionesMatematicas ::= REAL SENO INICIOPARENTESIS REAL PRUEBA FINALPARENTESIS FINLINEA|
+                         REAL COSENO INICIOPARENTESIS REAL PRUEBA FINALPARENTESIS FINLINEA|
+                         REAL TANGENTE INICIOPARENTESIS REAL PRUEBA FINALPARENTESIS FINLINEA|
+                         REAL LOGARITMO INICIOPARENTESIS REAL PRUEBA FINALPARENTESIS FINLINEA|
+                         REAL RAIZ INICIOPARENTESIS REAL PRUEBA FINALPARENTESIS FINLINEA;
+
+FuncionCompuesta ::= FuncionSi FuncionSino|
+                     FuncionSi;
+
+FuncionSi ::= SI Condicionante ENTONCES FINLINEA Respuesta;
+
+FuncionSino ::= SINO Condicionante ENTONCES FINLINEA Respuesta FuncionSino|
+                SINO FINLINEA Respuesta;
+
+FuncionDesde ::= DESDE ENTERO PRUEBA IGUAL NUMEROS MIENTRAS PRUEBA Condicion NUMEROS INCREMENTAR NUMEROS HACER FINLINEA|
+                 DESDE PRUEBA MIENTRAS PRUEBA Condicion NUMEROS DECREMENTAR NUMEROS HACER FINLINEA|
+                 DESDE ENTERO PRUEBA IGUAL NUMEROS MIENTRAS PRUEBA Condicion NUMEROS DECREMENTAR NUMEROS HACER FINLINEA|
+                 DESDE PRUEBA MIENTRAS PRUEBA Condicion NUMEROS INCREMENTAR NUMEROS HACER FINLINEA|
+                 DESDE ENTERO PRUEBA IGUAL NUMEROS MIENTRAS PRUEBA Condicion NUMEROS HACER FINLINEA|
+                 DESDE PRUEBA MIENTRAS PRUEBA Condicion NUMEROS HACER FINLINEA;
+
+FuncionHacer ::= HACER FINLINEA OperacionCompuesta FINLINEA MIENTRAS Condicionante;
+
+Incremento ::= PRUEBA INCREMENTO;
+
+Decremento ::= PRUEBA DECREMENTO;
+
+/*Contenido*/
+
+ContenidoClases ::= Propiedades  Metodos |
+                    Propiedades;
+
+ContenidoPublico ::= ContenidoPublico Constructor|
+                     Constructor ContenidoMetodos|
+                     Constructor Destructor ContenidoMetodos|
+                     Constructor|
+                     ContenidoMetodos;
+
+ContenidoMetodos ::= ContenidoMetodos Funciones|
+                     ContenidoMetodos Declaracion|
+                     Funciones|
+                     Declaracion;
+
+Escritura ::= ESCRIBIR NUMEROS Escrituras;
+              ESCRIBIR CadenaString Escrituras;
+              ESCRIBIR Identificador Escrituras;  
+
+Escrituras ::= Escrituraaux PUNTOYCOMA|
+               Escrituraaux|
+               PUNTOYCOMA;
+
+Escrituraaux ::= Escrituraaux Opcionalternatica|
+                 Opcionalternatica;
+
+Opcionalternatica ::= COMA NUMEROS|
+                      COMA CadenaString|
+                      COMA Identificador;
+
+OpcionesEscritura ::= NUMEROS|
+                      CadenaString|
+                      Identificador;
+
+Lectura ::= Lectura LEER PRUEBA PUNTOYCOMA FINLINEA Lecturas|
+            Lectura LEER PRUEBA FINLINEA Lecturas;
+
+
+Lecturas ::= LEER PRUEBA PUNTOYCOMA FINLINEA|
+             LEER PRUEBA FINLINEA;
+
+ContenidoInstancia ::= ContenidoInstancia Escritura|
+                       ContenidoInstancia Lectura|
+                       Escritura|
+                       Lectura;
+                                  
+
+
+
+ContenidoPrincipal ::= ContenidoPrincipal Funciones|
+                       ContenidoPrincipal Instancia|
+                       ContenidoPrincipal Escritura|
+                       ContenidoPrincipal Lectura|
+                       Funciones|
+                       Instancia|
+                       Escritura|
+                       Lectura;
+
+/*
+
+
+Respuesta ::= DEVOLVER OperacionCompuesta FINLINEA|
+              Escritura FINLINEA;
+
+Condicionante ::= PRUEBA Condicion NUMEROS|
+                  NUMEROS Condicion PRUEBA|
+                  PRUEBA Condicion PRUEBA|
+                  NUMEROS Condicion NUMEROS;
+
+Operacion ::= PRUEBA Operadores Operaciones|
+              NUMEROS Operadores Operaciones;
+
+Operaciones ::= Operaciones NUMEROS Operadores NUMEROS|
+                Operaciones PRUEBA Operadores NUMEROS|
+                Operaciones NUMEROS Operadores PRUEBA|
+                Operaciones PRUEBA Operadores PRUEBA|
+                NUMEROS Operadores NUMEROS|
+                PRUEBA Operadores NUMEROS|
+                NUMEROS Operadores PRUEBA|
+                PRUEBA Operadores PRUEBA|
+                NUMEROS|
+                PRUEBA;
+
+OperacionCompuesta ::= Llave|
+                       Corchete|
+                       Parentesis|
+                       Operacion|
+                       Llave OperacionCompuesta|
+                       Corchete OperacionCompuesta|
+                       Parentesis OperacionCompuesta|
+                       Operacion OperacionCompuesta|
+                       Llave Operadores OperacionCompuesta|
+                       Corchete Operadores OperacionCompuesta|
+                       Parentesis Operadores OperacionCompuesta|
+                       Operacion Operadores OperacionCompuesta;
+
+OperacionesCompuesta ::= OperacionesCompuesta Llave|
+                         OperacionesCompuesta Corchete|
+                         OperacionesCompuesta OperacionParentesis|
+                         OperacionesCompuesta Operacion|
+                         OperacionesCompuesta Operadores Llave|
+                         OperacionesCompuesta Operadores Corchete|
+                         OperacionesCompuesta Operadores OperacionParentesis|
+                         OperacionesCompuesta Operadores Operacion|
+                         Operadores Llave|
+                         Operadores Corchete|
+                         Operadores OperacionParentesis|
+                         Operadores Operacion
+                         Llave|
+                         Corchete|
+                         OperacionParentesis|
+                         Operacion;
+
+OperacionParentesis ::= INICIOPARENTESIS Operacion FINALPARENTESIS|
+                        INICIOPARENTESIS Operacion FINALPARENTESIS Parentesis;
+
+Parentesis ::= Parentesis Operacion|
+               Parentesis Operadores Operacion|
+               Operadores Operacion|
+               Operacion;
+
+Corchete ::= INICIOCORCHETE ContenidoCorchetes FINALCORCHETE Corchetes|
+             INICIOCORCHETE ContenidoCorchetes FINALCORCHETE;
+
+Corchetes ::= Corchetes OperacionParentesis|
+              Corchetes Operadores OperacionParentesis|
+              Corchetes Operacion|
+              Corchetes Operadores Operacion|
+              OperacionParentesis|
+              Operadores OperacionParentesis|
+              Operacion|
+              Operadores Operacion;
+
+ContenidoCorchetes ::= OperacionParentesis ContenidosCorchete|
+                       Operacion ContenidosCorchete|
+                       OperacionParentesis|
+                       Operacion;
+
+ContenidosCorchete ::= ContenidosCorchete Operadores Operacion|
+                       ContenidoCorchetes Operacion|
+                       ContenidosCorchete Operadores OperacionParentesis|
+                       ContenidosCorchete OperacionParentesis|
+                       Operacion|  
+                       Operadores Operacion|
+                       OperacionParentesis|
+                       Operadores OperacionParentesis;
+
+Llave ::= INICIOLLAVE ContenidoLlaves FINALLLAVE Llaves|
+          INICIOLLAVE ContenidoLlaves FINALLLAVE;
+
+Llaves ::= Llaves OperacionParentesis|
+           Llaves Corchete|
+           Llaves Operacion|
+           Llaves Operadores OperacionParentesis|
+           Llaves Operadores Corchete|
+           Llaves Operadores Operacion|
+           OperacionParentesis|
+           Corchete|
+           Operacion|
+           Operadores OperacionParentesis|
+           Operadores Corchete|
+           Operadores Operacion;
+
+ContenidoLlaves ::= OperacionParentesis ContenidosLlave|
+                    Corchete ContenidoLlaves|
+                    Operacion ContenidosLlave|
+                    OperacionParentesis|
+                    Corchete|
+                    Operacion;
+
+ContenidosLlave ::= ContenidosLlave Operadores Operacion|
+                    ContenidosLlave Operacion|
+                    ContenidosLlave Operadores OperacionParentesis|
+                    ContenidosLlave OperacionParentesis|
+                    ContenidosLlave Operadores Corchete|
+                    ContenidosLlave Corchete|
+                    Operadores Operacion|
+                    Operacion|
+                    Operadores OperacionParentesis|
+                    OperacionParentesis|
+                    Operadores Corchete|
+                    Corchete;
+*/
